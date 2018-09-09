@@ -1,0 +1,9 @@
+Metoda findIndex() zwraca indeks pierwszego elementu tablicy, który spe³nia kryteria postawione w funkcji testuj¹cej. W przeciwnym wypadku zwraca -1.
+
+function isBigEnough(element) {
+  return element >= 15;
+}
+
+[12, 5, 8, 130, 44].findIndex(isBigEnough); 
+// zostanie zwrócony indeks czwartego elementu tablicy,
+// który wynosi 3

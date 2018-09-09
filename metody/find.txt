@@ -1,0 +1,7 @@
+Metoda find() zwraca pierwszy element tablicy, który spe³nia warunek podanej funkcji testuj¹cej. W przeciwnym razie, gdy ¿aden element tablicy nie spe³ni warunku, zwracana jest wartoœæ undefined.
+
+function isBigEnough(element) {
+  return element >= 15;
+}
+
+[12, 5, 8, 130, 44].find(isBigEnough); // 130
