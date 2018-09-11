@@ -1,12 +1,7 @@
-Tworzy now¹ tablicê z wszystkimi elementami, które przechodz¹ test okreœlony w postaci funkcji.
+let digits = [123, 87, 90, 37, 22, 213]
 
-function isBigEnough(value) {
-  return value >= 10;
-}
+let newDigits = digits.filter(function(digit) {
+  return (digit * 2) < 300
+})
 
-var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
-// filtered is [12, 130, 44]
-
-
-Sk³adnia
-arr.filter(callback[, thisArg])
+console.log(newDigits)

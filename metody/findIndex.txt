@@ -1,9 +1,7 @@
-Metoda findIndex() zwraca indeks pierwszego elementu tablicy, który spe³nia kryteria postawione w funkcji testuj¹cej. W przeciwnym wypadku zwraca -1.
+let numbers = [4238, 4738, 4553, 22, 980, 1098, 111]
 
-function isBigEnough(element) {
-  return element >= 15;
-}
+let indexOfFirstMatchingNumber = numbers.findIndex(function (number) {
+  return (number - 1000) > 3000
+})
 
-[12, 5, 8, 130, 44].findIndex(isBigEnough); 
-// zostanie zwrócony indeks czwartego elementu tablicy,
-// który wynosi 3
+console.log(indexOfFirstMatchingNumber)

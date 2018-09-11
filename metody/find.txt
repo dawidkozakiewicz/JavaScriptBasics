@@ -1,7 +1,7 @@
-Metoda find() zwraca pierwszy element tablicy, który spe³nia warunek podanej funkcji testuj¹cej. W przeciwnym razie, gdy ¿aden element tablicy nie spe³ni warunku, zwracana jest wartoœæ undefined.
+let vegetables = ['tomato', 'carrot', 'potato', 'cucumber', 'pumpkin', 'carrot']
 
-function isBigEnough(element) {
-  return element >= 15;
-}
+let firstMatchingVegetable = vegetables.find(function(vegetable) {
+  return vegetable === 'carrot'
+})
 
-[12, 5, 8, 130, 44].find(isBigEnough); // 130
+console.log(firstMatchingVegetable)
