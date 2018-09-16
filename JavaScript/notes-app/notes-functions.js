@@ -37,7 +37,6 @@ const renderNotes = function (notes, filters) {
 
     filteredNotes.forEach(function (note) {
         const noteEl = generateNoteDOM(note)
-        console.log(noteEl)
         document.querySelector('#notes').appendChild(noteEl)
     })
 }
