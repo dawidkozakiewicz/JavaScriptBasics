@@ -6,14 +6,10 @@ const getTip = (amount) => {
     }
 }
 
-console.log(getTip('u'))
-console.log('dalsza część kodu')
+try {
+    const result = getTip(10)
+    console.log(result)
+} catch (e) {
+    console.log('catch block is running')
+}
 
-// try {
-//     const result = getTip('a')
-//     console.log(result)
-// } catch (e) {
-//     console.log('catch block is running')
-// }
-
-// console.log('i się zesrało')

@@ -1,4 +1,4 @@
-// Read existing notes from localStorage
+// ☞ 4fa74fb4-19f7-4549-902f-51906c8a0f44
 const getSavedNotes = function () {
     const notesJSON = localStorage.getItem('notes')
 

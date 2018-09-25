@@ -1,4 +1,5 @@
-let notes = getSavedNotes()
+// ☞ d8d4f3ec-617a-4e55-922e-ba4f0db18023
+let notes = getSavedNotes() 
 
 const filters = {
     searchText: '',
