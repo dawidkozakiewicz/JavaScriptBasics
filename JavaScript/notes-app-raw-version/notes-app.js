@@ -39,3 +39,5 @@ window.addEventListener('storage', function (e) {
         renderNotes(notes, filters)
     }
 })
+
+// ☞ bd9d19d6-37a0-4cec-92bb-ef76f565a18f
