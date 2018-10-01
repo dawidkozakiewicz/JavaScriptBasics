@@ -14,7 +14,7 @@ Hangman.prototype.getPuzzle = function () {                              //proto
 
     this.word.forEach((letter) => {                                      //będzie przelatywać po tablicy z .7 (hasło rozbite na poszczególne litery) a elementy nazwie 'letter'
         if (this.guessedLetters.includes(letter) || letter === ' ') {    //jeśli tablica zawierająca odgadnięte litery (9.) ma daną letter, albo letter to spacja to:
-            puzzle += letter                                             //wyświetl tę 'letter', czyli wrzuć do stringa puzle z 13.
+            puzzle += letter                                             //wyświetl tę 'letter', czyli wrzuć do stringa puzzle z 13.
 
         } else {
             puzzle += '*'                                                //jesli nie, to wrzuć do puzle gwiazdkę: '*'    
