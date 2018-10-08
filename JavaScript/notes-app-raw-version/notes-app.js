@@ -38,6 +38,7 @@ window.addEventListener('storage', function (e) {
         notes = JSON.parse(e.newValue)
         renderNotes(notes, filters)
     }
+    console.log(e.key)
 })
 
 // ☞ bd9d19d6-37a0-4cec-92bb-ef76f565a18f
