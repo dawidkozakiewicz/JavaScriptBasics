@@ -38,8 +38,8 @@ Hangman.prototype.makeGuess = function (guess) {                         //proto
     }
 }
 
-const game1 = new Hangman('Cat', 2)                                      //stwórz instancję za pomocą konstruktora z 6.
-
+const game1 = new Hangman('Cat Jerry', 2)                                      //stwórz instancję za pomocą konstruktora z 6.
+console.log(game1)
 console.log(game1.getPuzzle())                                           //pokaż hasło (odgadnięte, bądź nie) używając funkcji getPuzzle z 12.
 console.log(game1.remainingGuesses)                                      //pokaż ile jeszcze odgadnięć zostało
 
@@ -49,4 +49,6 @@ window.addEventListener('keypress', function (e) {                       //nasł
     console.log(game1.getPuzzle())                                       //ponownie pokaż hasło (odgadnięte, bądź nie) używając funkcji getPuzzle z 12.
     console.log(game1.remainingGuesses)                                  //ponownie pokaż ile jeszcze odgadnięć zostało
     console.log(game1.guessedLetters)                                    //pokaż jakie litery wrzuciłeś do tablicy z 9.
+    console.log(game1) 
+    console.log(status)                                
 })
