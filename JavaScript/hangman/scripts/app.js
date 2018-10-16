@@ -9,18 +9,19 @@ window.addEventListener('keypress', (e) => {
 })
 
 const render = () => {
-    puzzleEl.textContent = game1.puzzle
-    console.log(game1.puzzle)
+    puzzleEl.innerHTML = ''
     guessesEl.textContent = game1.statusMessage
-    console.log(game1.status)
-    console.log(game1.statusMessage)
+    
+    game1.puzzle.split('').forEach((letter) => {
+        const letterEl = document.createElement('span')
+        letterEl.textContent = letter
+        puzzleEl.appendChild(letterEl)
+    })
 }
 
 const startGame = async () => {
     const puzzle = await getPuzzle('2')
-    console.log(puzzle)
     game1 = new Hangman(puzzle, 5)
-    console.log(game1)
     render()
 }
 
