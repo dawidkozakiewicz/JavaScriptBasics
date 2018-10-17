@@ -1,19 +1,17 @@
 'use strict'
 
-let notes = getSavedNotes()
-
+let notes = getSavedNotes()  // tworzy tablicę z notatkami funkcją z notes-functions z 4.
+console.log(notes)
 const filters = {
     searchText: '',
     sortBy: 'byEdited'
 }
 
-renderNotes(notes, filters)
+renderNotes(notes, filters)  // renderuje przy użyciu funkcji z notes-functions z 93.
 
 document.querySelector('#create-note').addEventListener('click', (e) => {
     const id = uuidv4()
     const timestamp = moment().valueOf()
-    console.log(moment())
-    console.log(moment().valueOf())
 
     notes.push({
         id: id,
