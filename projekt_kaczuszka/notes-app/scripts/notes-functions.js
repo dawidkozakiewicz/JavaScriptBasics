@@ -27,9 +27,9 @@ const removeNote = (id) => {
 
 // Generate the DOM structure for a note
 const generateNoteDOM = (note) => {
-    const noteEl = document.createElement('a')
-    const textEl = document.createElement('p')
-    const statusEl = document.createElement('p')
+    const noteEl = document.createElement('a') //tworzy miejsce na link
+    const textEl = document.createElement('p') // tworzy miejsce na paragraf
+    const statusEl = document.createElement('p') // tworzy miejsce na paragraf
 
     // Setup the note title text
     if (note.title.length > 0) {
@@ -57,9 +57,9 @@ const sortNotes = (notes, sortBy) => {  // wrzuciło tu tablicę notes oraz typ 
     if (sortBy === 'byEdited') {   // porównuje wartości updatedAt
         return notes.sort((a, b) => { // sortuje od najmniejszej do największej
             if (a.updatedAt > b.updatedAt) {
-                return -1   //jeśli jedna wartość jest większa niż inna to ustaw ją jako pierwszą
+                return -1   //jeśli jedna wartość jest większa niż inna to ustaw ją jako pierwszą - ustaw później stworzoną na początku
             } else if (a.updatedAt < b.updatedAt) {
-                return 1  //jeśli jedna wartość jest mniejsza niż inna, to ustaw ją jako drugą
+                return 1  //jeśli jedna wartość jest mniejsza niż inna, to ustaw ją jako drugą - ustaw wcześniej stworzoną na końcu
             } else {
                 return 0
             }
@@ -98,10 +98,10 @@ const renderNotes = (notes, filters) => {    // przyjmuje jako argumenty tablic�
     console.log(`this is searched text: ${filters.searchText}`)
     //ewentualnie wielkie litery tytułu każdej note i sprawdza, czy poszczególny tytuł zawiera literę z filtra (też zmniejszoną) domyślnie: ''
     notesEl.innerHTML = '' // czyści całą zawartość diva o klasie "notes" z index.html 27.
-
+    console.log(filteredNotes)
     if (filteredNotes.length > 0) {
         filteredNotes.forEach((note) => {
-            const noteEl = generateNoteDOM(note)
+            const noteEl = generateNoteDOM(note)  //funkcja z .29
             notesEl.appendChild(noteEl)
         })
     } else {
