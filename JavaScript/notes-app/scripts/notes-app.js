@@ -1,13 +1,13 @@
 'use strict'
 
-let notes = getSavedNotes()  // tworzy tablicę z notatkami funkcją z notes-functions z 4.
-console.log(notes)
+let notes = getSavedNotes()
+
 const filters = {
     searchText: '',
     sortBy: 'byEdited'
 }
 
-renderNotes(notes, filters)  // renderuje przy użyciu funkcji z notes-functions z 93.
+renderNotes(notes, filters)
 
 document.querySelector('#create-note').addEventListener('click', (e) => {
     const id = uuidv4()

@@ -2,12 +2,12 @@
 
 // Read existing notes from localStorage
 const getSavedNotes = () => {
-    const notesJSON = localStorage.getItem('notes')  // pobranie z localstorage tablicy json o nazwie 'notes'
+    const notesJSON = localStorage.getItem('notes')
 
     try {
-        return notesJSON ? JSON.parse(notesJSON) : []  // jak taka tablica jest, to ją sparsuj, jak nie ma to wyrzuć pustą tablicę
+        return notesJSON ? JSON.parse(notesJSON) : []
     } catch (e) {
-        return []  // jeśli był błąd, zwróć pustą tablicę
+        return []
     } 
 }
 
@@ -53,13 +53,13 @@ const generateNoteDOM = (note) => {
 }
 
 // Sort your notes by one of three ways
-const sortNotes = (notes, sortBy) => {  // wrzuciło tu tablicę notes oraz typ sortowania z notes-app 7. (domyślnie jest to byEdited) funkcja używana w renderNotes
-    if (sortBy === 'byEdited') {   // porównuje wartości updatedAt
-        return notes.sort((a, b) => { // sortuje od najmniejszej do największej
+const sortNotes = (notes, sortBy) => {
+    if (sortBy === 'byEdited') {
+        return notes.sort((a, b) => {
             if (a.updatedAt > b.updatedAt) {
-                return -1   //jeśli jedna wartość jest większa niż inna to ustaw ją jako pierwszą
+                return -1
             } else if (a.updatedAt < b.updatedAt) {
-                return 1  //jeśli jedna wartość jest mniejsza niż inna, to ustaw ją jako drugą
+                return 1
             } else {
                 return 0
             }
@@ -90,14 +90,12 @@ const sortNotes = (notes, sortBy) => {  // wrzuciło tu tablicę notes oraz typ 
 }
 
 // Render application notes
-const renderNotes = (notes, filters) => {    // przyjmuje jako argumenty tablicę notes z notes-app 3. oraz obiekt filters z notes-app 5.
-    const notesEl = document.querySelector('#notes')  // chwyta diva o klasie "notes" z  index.html 27.
-    notes = sortNotes(notes, filters.sortBy) // tworzy tablicę posortowanych notes funkcją z 56. argumenty: tablica notes z notes-app 3. oraz typ sortowania z filters
-    console.log(notes)
-    const filteredNotes = notes.filter((note) => note.title.toLowerCase().includes(filters.searchText.toLowerCase())) // przeszukuje posortowaną już tablicę notes zmniejsza
-    console.log(`this is searched text: ${filters.searchText}`)
-    //ewentualnie wielkie litery tytułu każdej note i sprawdza, czy poszczególny tytuł zawiera literę z filtra (też zmniejszoną) domyślnie: ''
-    notesEl.innerHTML = '' // czyści całą zawartość diva o klasie "notes" z index.html 27.
+const renderNotes = (notes, filters) => {
+    const notesEl = document.querySelector('#notes')
+    notes = sortNotes(notes, filters.sortBy)
+    const filteredNotes = notes.filter((note) => note.title.toLowerCase().includes(filters.searchText.toLowerCase()))
+
+    notesEl.innerHTML = ''
 
     if (filteredNotes.length > 0) {
         filteredNotes.forEach((note) => {
