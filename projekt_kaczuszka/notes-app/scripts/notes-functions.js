@@ -3,7 +3,7 @@
 // Read existing notes from localStorage
 const getSavedNotes = () => {
     const notesJSON = localStorage.getItem('notes')  // pobranie z localstorage tablicy json o nazwie 'notes'
-
+          console.log(notesJSON)
     try {
         return notesJSON ? JSON.parse(notesJSON) : []  // jak taka tablica jest, to ją sparsuj, jak nie ma to wyrzuć pustą tablicę
     } catch (e) {
@@ -55,7 +55,7 @@ const generateNoteDOM = (note) => {  // jest tu przekazana każada note po kolei
 // Sort your notes by one of three ways
 const sortNotes = (notes, sortBy) => {  // wrzuciło tu tablicę notes oraz typ sortowania z notes-app 7. (domyślnie jest to byEdited) funkcja używana w renderNotes
     if (sortBy === 'byEdited') {   // porównuje wartości updatedAt
-        return notes.sort((a, b) => { // sortuje od najmniejszej do największej
+        return notes.sort((a, b) => { // sortuje od największej do najmniejszej
             if (a.updatedAt > b.updatedAt) {
                 return -1   //jeśli jedna wartość jest większa niż inna to ustaw ją jako pierwszą - ustaw później stworzoną na początku
             } else if (a.updatedAt < b.updatedAt) {
