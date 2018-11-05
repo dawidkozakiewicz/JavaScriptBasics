@@ -1,0 +1,41 @@
+@bg-color: #0B3861;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+}
+div {
+	margin-left: 50px;
+	width: 500px;
+	height: 100px;
+	background-color: @bg-color;
+}
+
+.first {
+	
+}
+
+.second {
+	background-color: lighten(@bg-color, 10%);
+}
+
+.third {
+	background-color: lighten(@bg-color, 20%);
+}
+
+.fourth {
+	background-color: lighten(@bg-color, 30%);
+}
+
+.fifth {
+	background-color: darken(@bg-color, 13%);
+}
+
+.sixth {
+	background-color: fade(@bg-color, 10%);
+}
+
+.seventh {
+	background-color: desaturate(@bg-color, 50%);
+}
