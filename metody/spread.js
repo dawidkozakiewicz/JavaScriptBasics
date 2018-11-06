@@ -31,3 +31,21 @@ let citiesClone = [...cities, 'Santiago']
 console.log(cities) // Will print three citites
 
 console.log(citiesClone) // Will print four citites
+
+// Składni spread można używać podczas tworzenia nowego obiektu. 
+// Zapewnia łatwy sposób tworzenia, klonowania lub scalania obiektów. 
+// Poniższy kod pokazuje, w jaki sposób można użyć składni spread do sklonowania obiektu.
+
+let house = {
+    bedrooms: 2,
+    bathrooms: 1.5,
+    yearBuilt: 2017
+}
+
+let clone = {
+    ...house
+}
+
+console.log(house) // Will print the same as clone
+
+console.log(clone) // Will print the same as house
