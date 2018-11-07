@@ -49,3 +49,31 @@ let clone = {
 console.log(house) // Will print the same as clone
 
 console.log(clone) // Will print the same as house
+
+
+// Poniższy kod pokazuje, jak używać składni spread, 
+// aby scalić dwa obiekty, 
+// jednocześnie zastępując niektóre z ich właściwości.
+
+const person = {
+    name: 'Andrew',
+    age: 27
+    }
+    const location = {
+    city: 'Philadelphia',
+    country: 'USA'
+    }
+    const overview = {
+    ...person,
+    ...location,
+    name: 'Mike'
+    }
+    console.log(overview)
+    // The above code will print the following
+    // {
+    // age: 27,
+    // city: "Philadelphia",
+    // country: "USA",
+    // name: "Mike"
+    // }
+    
