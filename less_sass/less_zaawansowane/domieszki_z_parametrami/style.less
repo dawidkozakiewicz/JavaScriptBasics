@@ -1,0 +1,24 @@
+.border(@width: 1px;@style: solid;@color: #ccc) {
+	border: @arguments;
+
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+
+header {
+	.border(1px;solid;#f00)
+}
+
+section {
+	.border(2px;dashed;#777)
+}
+
+footer {
+	.border(@width: 5px;@color: rgb(83, 30, 168))
+}

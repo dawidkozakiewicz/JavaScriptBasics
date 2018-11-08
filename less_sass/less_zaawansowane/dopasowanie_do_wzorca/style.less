@@ -1,0 +1,29 @@
+
+@button-type: dark;
+@button-abc: light;
+
+.button(dark) {
+	padding: 12px 22px;
+	border: none;
+	background-color: #222;
+	color: #CCC;
+}
+
+.button(light) {
+	padding: 12px 22px;
+	border: none;
+	background-color: #CCC;
+	color: #222;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+
+button {
+	.button(@button-abc);
+}
