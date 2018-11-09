@@ -1,0 +1,32 @@
+@color-dark: #0404B4;
+@color-light: #EFEFFB;
+
+.button {
+	padding: 8px 18px;
+	background-color: @color-dark;
+	color: @color-light;
+	border: none;
+}
+
+.button-rounded {
+	border-radius: 8px;
+	&:extend(.button);
+}
+
+
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+
+.b-first {
+	.button;
+}
+
+.b-second {
+	.button-rounded
+}
+
