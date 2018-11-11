@@ -1,8 +1,7 @@
 const todo = {
     id: 'asdfpoijwermasdf',
     text: 'Pay the bills',
-    completed: false,
-    car: 'Syrena 105'
+    completed: false
 }
 
 const printTodo = ({ text, completed }) => {
