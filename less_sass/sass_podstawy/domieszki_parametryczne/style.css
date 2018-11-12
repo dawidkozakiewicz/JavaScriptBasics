@@ -1,0 +1,16 @@
+body {
+  font-family: 'Arial', sans-serif;
+  padding-left: 50px; }
+
+h1 {
+  width: 35%;
+  border: 1px solid #888;
+  border-radius: 10px; }
+
+.content {
+  width: 55%;
+  padding: 40px;
+  border: 1px solid #888;
+  box-shadow: 5px 5px 30px #333, -5px -5px 30px #974040; }
+
+/*# sourceMappingURL=style.css.map */

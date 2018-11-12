@@ -1,0 +1,21 @@
+body {
+  font-family: 'Arial', sans-serif;
+  padding-left: 50px; }
+
+.content {
+  width: 55%;
+  padding: 40px;
+  border: 1px solid #888; }
+  .content ul {
+    list-style-type: none; }
+    .content ul li {
+      margin-bottom: 7px; }
+      .content ul li a {
+        color: #444;
+        text-decoration: none; }
+        .content ul li a:hover {
+          color: #888; }
+        .content ul li a:after {
+          content: " >>"; }
+
+/*# sourceMappingURL=style.css.map */

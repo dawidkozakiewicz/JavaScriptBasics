@@ -1,0 +1,17 @@
+body {
+  font-family: 'Arial', sans-serif;
+  padding-left: 50px; }
+
+.content {
+  width: 55%;
+  padding: 40px; }
+  .content p {
+    color: purple; }
+
+.red {
+  color: #f00; }
+
+.blue {
+  color: #00f; }
+
+/*# sourceMappingURL=style.css.map */

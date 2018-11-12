@@ -1,0 +1,24 @@
+$color-a: #f00;
+$color-b: #00f;
+body {
+	font-family: 'Arial', sans-serif;
+	padding-left: 50px;
+}
+
+.content {
+	width: 55%;
+	padding: 40px;
+	p {
+		color: mix($color-a, $color-b)
+	}
+	
+}
+
+.red {
+	color: $color-a;
+}
+
+
+.blue {
+	color: $color-b;
+}
