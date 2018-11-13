@@ -1,0 +1,14 @@
+$colors: #f00 #0f0 #00f;
+
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+
+ p {
+	color: nth($colors, 3);
+ }
+ 

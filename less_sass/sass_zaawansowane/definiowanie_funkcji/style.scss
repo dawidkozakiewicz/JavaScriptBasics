@@ -1,0 +1,29 @@
+$column-width: 100px;
+
+@function make-columns($number) {
+	@return $number*$column-width;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+
+div {
+	height: 300px;
+	float: left;
+}
+
+.main {
+	background-color: #555;
+	width: make-columns(6);
+}
+
+.aside {
+	background-color: #777;
+	width: make-columns(3);
+}
+ 
