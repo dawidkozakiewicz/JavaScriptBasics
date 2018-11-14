@@ -1,0 +1,29 @@
+$bg-color: rgb(92, 10, 74);
+
+@mixin create-colors {
+	@for $i from 1 through 10 {
+		.block-#{$i} {
+			background: lighten($bg-color, $i*3);
+		}
+	}
+}
+
+
+body {
+	font-family: 'Arial', sans-serif;
+	padding: 0 50px;
+	@include create-colors();
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+
+div {
+	width: 50%;
+	height: 50px;
+	background: $bg-color;
+}
+
+
+

@@ -1,0 +1,26 @@
+body {
+  font-family: 'Arial', sans-serif; }
+
+h1, h2 {
+  font-weight: 400; }
+
+.message {
+  width: 40%;
+  padding: 5px;
+  border-radius: 3px; }
+
+.error {
+  color: #610B0B;
+  background: #fad7d7;
+  width: 40%;
+  padding: 5px;
+  border-radius: 3px; }
+
+.success {
+  color: #0B610B;
+  background: #d7fad7;
+  width: 40%;
+  padding: 5px;
+  border-radius: 3px; }
+
+/*# sourceMappingURL=style.css.map */

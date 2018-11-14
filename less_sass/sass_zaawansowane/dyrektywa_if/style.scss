@@ -1,0 +1,24 @@
+$color-variant: 'Dark';
+
+@mixin set-color-variant {
+	@if $color-variant == Dark {
+		color: #FFF;
+		background: #000;
+	}
+	@else if $color-variant == Light {
+		color: #000;
+		background: #FFF;
+	}
+	
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	padding: 0 50px;
+	@include set-color-variant();
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+

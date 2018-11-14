@@ -1,0 +1,25 @@
+body {
+  font-family: 'Arial', sans-serif;
+  padding: 0 50px; }
+
+h1,
+h2 {
+  font-weight: 400; }
+
+.social-block {
+  margin-top: 50px; }
+  .social-block .social-facebook {
+    background: url("images/facebook.png") no-repeat; }
+  .social-block .social-googleplus {
+    background: url("images/googleplus.png") no-repeat; }
+  .social-block .social-twitter {
+    background: url("images/twitter.png") no-repeat; }
+  .social-block .social-youtube {
+    background: url("images/youtube.png") no-repeat; }
+  .social-block span {
+    display: inline-block;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px; }
+
+/*# sourceMappingURL=style.css.map */

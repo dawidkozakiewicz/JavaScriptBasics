@@ -1,0 +1,65 @@
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+
+// .message {
+// 	color: #2E2E2E;
+// 	background: lighten(#2E2E2E,70%);
+// 	width: 40%;
+// 	padding: 5px;
+// 	border-radius: 3px;
+// }
+
+// .error {
+// 	color: #610B0B;
+// 	background: lighten(#610B0B,70%);
+// 	// width: 40%;
+// 	// padding: 5px;
+// 	// border-radius: 3px;
+// 	@extend .message
+// }
+
+// .success {
+// 	color: #0B610B;
+// 	background: lighten(#0B610B,70%);
+// 	// width: 40%;
+// 	// padding: 5px;
+// 	// border-radius: 3px;
+// 	@extend .message
+// }
+
+
+
+// to samo w użyciem Mixin
+@mixin message {
+	width: 40%;
+	padding: 5px;
+	border-radius: 3px;
+}
+
+.message {
+	@include message;
+}
+
+.error {
+	color: #610B0B;
+	background: lighten(#610B0B,70%);
+	@include message;
+}
+
+.success {
+	color: #0B610B;
+	background: lighten(#0B610B,70%);
+	@include message;
+}
+
+
+
+
+
+
+ 

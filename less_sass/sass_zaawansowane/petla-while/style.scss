@@ -1,0 +1,30 @@
+$bg-color: rgb(0, 0, 0);
+$i: 10;
+
+@mixin generate-stripes {
+	@while $i > 0 {
+		.block-#{$i} {
+			background: lighten($bg-color, 50%);
+		}
+		$i: $i - 2;
+	}
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	padding: 0 50px;
+	@include generate-stripes;
+}
+
+h1, h2 {
+	font-weight: 400;
+}
+
+div {
+	width: 50%;
+	height: 50px;
+	background: $bg-color;
+}
+
+
+
