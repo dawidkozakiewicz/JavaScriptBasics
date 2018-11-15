@@ -1,23 +1,2 @@
-body {
-  font-family: 'Arial', sans-serif;
-  padding: 0 50px; }
-  body .block-10 {
-    background: gray; }
-  body .block-8 {
-    background: gray; }
-  body .block-6 {
-    background: gray; }
-  body .block-4 {
-    background: gray; }
-  body .block-2 {
-    background: gray; }
-
-h1, h2 {
-  font-weight: 400; }
-
-div {
-  width: 50%;
-  height: 50px;
-  background: black; }
-
+body{font-family:'Arial', sans-serif;padding:0 50px}body .block-10{background:gray}body .block-8{background:gray}body .block-6{background:gray}body .block-4{background:gray}body .block-2{background:gray}h1,h2{font-weight:400}div{width:50%;height:50px;background:#000}
 /*# sourceMappingURL=style.css.map */
