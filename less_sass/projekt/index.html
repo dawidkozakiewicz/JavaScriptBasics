@@ -6,7 +6,8 @@
 	<title>Projekt</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	 crossorigin="anonymous">
 
 </head>
 
@@ -14,35 +15,221 @@
 	<!-- glowny kontener -->
 	<div id="main-container">
 
-
-		<!-- nawigacja -->
+		<!-- Nawigacja -->
 		<header>
-
 			<nav>
 				<div class="container">
 					<div class="navbar">
 						<div class="nav-logo">
-							<a href=""><img src="images\logo.png" alt="logo"></a>
+							<a href=""><img src="images/logo.png" alt="logo"></a>
 						</div>
 						<div class="main-menu-content">
 							<ul id="main-menu">
-								<li><a href="">Start</a></li>
+								<li><a href="" class="menu-link-active">Start</a></li>
 								<li><a href="">Opinie</a></li>
 								<li><a href="">Portfolio</a></li>
 								<li><a href="">Sklep</a></li>
-								<li><a href="">Wspólpraca</a></li>
+								<li><a href="">Współpraca</a></li>
 								<li><a href="">Kontakt</a></li>
-								<li><a href=""><i class="fas fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-search"></i></a></li>
 							</ul>
+						</div>
+						<!-- menu mobilne -->
+						<div id="attach-mobile-menu">
 						</div>
 					</div>
 				</div>
 			</nav>
-
 		</header>
 
+		<!-- Slider -->
+		<div class="top-slider">
+			<ul class="bxslider" id="main-slider">
+				<li>
+					<div class="main-slide-1">
+						<div class="container">
+							<div class="main-slider-content">
+								<h1 class="animated fadeInDown">Dawid Kozakiewicz</h1>
+								<p class="animated fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<a href="" class="animated fadeInUp">Zobacz</a>
+								<img src="images/slider_1_phone.png" alt="" class="animated fadeInDown">
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="main-slide-2">
+						<div class="container">
+							<div class="main-slider-content">
+								<h1 class="animated fadeInDown">Web Developer</h1>
+								<p class="animated fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<a href="" class="animated fadeInUp">Zobacz</a>
+								<img src="images/slider_2_tablet.png" alt="" class="animated fadeInDown">
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
 
-	</div>
+		<!-- Sekcja nasze uslugi -->
+		<div class="our-services">
+			<div class="container">
+				<div class="single-col" data-animate="fadeInLeft">
+					<span><i class="fa fa-line-chart"></i></span>
+					<h3>SEO</h3>
+					<p>Aenean sed justo tincidunt, vulputate nisi si amet, rutrum ligula. Pellentesque dictum uam ornare. Sed elit le
+						rut.</p>
+				</div>
+				<div class="single-col" data-animate="fadeInUp">
+					<span><i class="fa fa-wifi"></i></span>
+					<h3>Projektowanie stron</h3>
+					<p>Aenean sed justo tincidunt, vulputate nisi si amet, rutrum ligula. Pellentesque dictum uam ornare. Sed elit le
+						rut.</p>
+				</div>
+				<div class="single-col" data-animate="fadeInUp">
+					<span><i class="fa fa-envelope"></i></span>
+					<h3>Programowanie</h3>
+					<p>Aenean sed justo tincidunt, vulputate nisi si amet, rutrum ligula. Pellentesque dictum uam ornare. Sed elit le
+						rut.</p>
+				</div>
+				<div class="single-col" data-animate="fadeInRight">
+					<span><i class="fas fa-cannabis"></i></span>
+					<h3>Inne usługi</h3>
+					<p>Aenean sed justo tincidunt, vulputate nisi si amet, rutrum ligula. Pellentesque dictum uam ornare. Sed elit le
+						rut.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Sekcja nasze portfolio -->
+		<div class="portfolio">
+
+			<!-- tytul -->
+			<div class="section-title">
+				<div class="container" data-animate="bounceIn">
+					<h2>Nasze portfolio</h2>
+					<p>Vestibulum accumsan auctor diam id aliquam. Sed at eros vitae nulla dictum convallis sit amet vel nibh</p>
+				</div>
+			</div>
+
+			<!-- slider -->
+			<div class="portfolio-slider">
+				<div class="container" data-animate="fadeIn">
+					<div id="portfolio-carousel" class="owl-carousel">
+						<div class="portfolio-item">
+							<img src="images/owl_slider/os1.jpg" alt="">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-inner">
+									<h3>Przykładowy projekt</h3>
+									<p>13 stycznia 2015</p>
+									<a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+									<a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/owl_slider/os2.jpg" alt="">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-inner">
+									<h3>Przykładowy projekt</h3>
+									<p>13 stycznia 2015</p>
+									<a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+									<a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/owl_slider/os3.jpg" alt="">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-inner">
+									<h3>Przykładowy projekt</h3>
+									<p>13 stycznia 2015</p>
+									<a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+									<a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/owl_slider/os4.jpg" alt="">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-inner">
+									<h3>Przykładowy projekt</h3>
+									<p>13 stycznia 2015</p>
+									<a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+									<a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/owl_slider/os1.jpg" alt="">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-inner">
+									<h3>Przykładowy projekt</h3>
+									<p>13 stycznia 2015</p>
+									<a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+									<a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/owl_slider/os3.jpg" alt="">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-inner">
+									<h3>Przykładowy projekt</h3>
+									<p>13 stycznia 2015</p>
+									<a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+									<a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/owl_slider/os2.jpg" alt="">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-inner">
+									<h3>Przykładowy projekt</h3>
+									<p>13 stycznia 2015</p>
+									<a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+									<a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/owl_slider/os1.jpg" alt="">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-inner">
+									<h3>Przykładowy projekt</h3>
+									<p>13 stycznia 2015</p>
+									<a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+									<a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-item">
+							<img src="images/owl_slider/os4.jpg" alt="">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-inner">
+									<h3>Przykładowy projekt</h3>
+									<p>13 stycznia 2015</p>
+									<a href="" class="portfolio-link-left"><i class="fa fa-search"></i></a>
+									<a href="" class="portfolio-link-right"><i class="fa fa-file-image-o"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
 
 
 </body>
