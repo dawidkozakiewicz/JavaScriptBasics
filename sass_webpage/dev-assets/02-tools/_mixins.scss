@@ -11,16 +11,3 @@
         @content
     }
 }
-
-h1 {
-    color: red;
-
-    @include medium-up {
-        color: blue;
-    }
-@include large-up {
-    color: green;
-    font-size: 100px;
-}
-
-}
