@@ -28,3 +28,7 @@ window.addEventListener('storage', (e) => {
         renderNotes()
     }
 })
+
+
+
+

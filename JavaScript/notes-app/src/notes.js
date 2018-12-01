@@ -108,4 +108,17 @@ const updateNote = (id, updates) => {
 
 notes = loadNotes()
 
+
+
+
+
+
+
+console.log(moment())
+console.log(moment().valueOf())
+
+
+
+
+
 export { getNotes, createNote, removeNote, sortNotes, updateNote }
