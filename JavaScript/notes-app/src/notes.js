@@ -116,6 +116,7 @@ notes = loadNotes()
 
 console.log(moment())
 console.log(moment().valueOf())
+console.log(notes)
 
 
 
