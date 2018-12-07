@@ -1,0 +1,11 @@
+.o-col {
+    width: 100%;
+    padding-left: $gutter;
+    padding-right: $gutter;
+
+    &--md50 {
+        @include medium-up {
+            flex: 0 0 50%;
+        }
+    }
+}

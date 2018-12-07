@@ -1,0 +1,11 @@
+.o-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+
+    @include medium-up {
+        flex-direction: row;
+    }
+}

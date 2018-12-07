@@ -1,3 +1,6 @@
+*, *::before, *::after {
+  box-sizing: border-box; }
+
 body {
   background-color: #FFFFFF;
   color: #444444;
@@ -34,8 +37,15 @@ a {
     color: #444444;
     text-decoration: underline; }
 
+.o-col {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 800px) {
+    .o-col--md50 {
+      flex: 0 0 50%; } }
+
 .o-container {
-  border: 0.5px solid black;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -47,3 +57,13 @@ a {
   @media (min-width: 1200px) {
     .o-container {
       max-width: 1140px; } }
+
+.o-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px; }
+  @media (min-width: 800px) {
+    .o-row {
+      flex-direction: row; } }
