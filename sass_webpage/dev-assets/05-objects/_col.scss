@@ -2,10 +2,12 @@
     width: 100%;
     padding-left: $gutter;
     padding-right: $gutter;
+    border: 1px solid blue;
 
     &--md50 {
         @include medium-up {
             flex: 0 0 50%;
+            max-width: 50%;
         }
     }
 }
