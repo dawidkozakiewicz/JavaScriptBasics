@@ -4,7 +4,6 @@
     flex-wrap: wrap;
     margin-left: -$gutter;
     margin-right: -$gutter;
-    border: 1px solid red;
 
     @include medium-up {
         flex-direction: row;
