@@ -44,4 +44,11 @@
             max-width: 50%;
         }
     }
+
+    &--lg75 {
+        @include large-up {
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+    }
 }

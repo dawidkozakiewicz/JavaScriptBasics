@@ -8,4 +8,8 @@
     @include medium-up {
         flex-direction: row;
     }
+
+    &--center-y {
+        align-items: center;
+    }
 }
