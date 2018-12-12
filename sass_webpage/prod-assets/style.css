@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
 *, *::before, *::after {
   box-sizing: border-box; }
 
 body {
   background-color: #FFFFFF;
   color: #444444;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   margin: 0;
   padding: 0; }
@@ -112,7 +111,7 @@ a {
     text-decoration: none; }
   .c-btn--primary {
     background-color: #D3EAFA;
-    color: #c62168; }
+    color: #3B99E1; }
     .c-btn--primary:hover {
       background-color: #8ec9f2;
       color: #FFFFFF; }
@@ -130,10 +129,10 @@ a {
       color: #FFFFFF; }
   .c-btn--light {
     background-color: #FFFFFF;
-    color: #c62168; }
+    color: #3B99E1; }
     .c-btn--light:hover {
       background-color: #d9d9d9;
-      color: #c62168; }
+      color: #3B99E1; }
   .c-btn--outline {
     background-color: transparent;
     border: 2px solid #FFFFFF;
@@ -143,7 +142,7 @@ a {
       border: 2px solid #d9d9d9; }
 
 .c-heading {
-  color: #c62168;
+  color: #3B99E1;
   line-height: 1.2;
   margin-bottom: 5px; }
   .c-heading--level1 {
@@ -212,9 +211,11 @@ a {
       width: auto; } }
 
 .t-site-header {
-  background: #c62168;
-  clip-path: ellipse(68% 450px at 50% 28%);
-  padding-bottom: 40px; }
+  background: url("../images/header-tlo.jpg") 0 0 no-repeat; }
+  @media (min-width: 1200px) {
+    .t-site-header {
+      clip-path: ellipse(68% 450px at 50% 28%);
+      padding-bottom: 40px; } }
   .t-site-header__top {
     padding-bottom: 25px;
     padding-top: 25px; }
@@ -248,6 +249,15 @@ a {
         font-size: 1.125rem;
         line-height: 1.66;
         margin-bottom: 60px; } }
+  .t-site-header__btn-divider {
+    color: #FFFFFF;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin: 20px; }
+    @media (min-width: 800px) {
+      .t-site-header__btn-divider {
+        display: inline-block; } }
 
 .u-bg-white {
   background-color: #FFFFFF; }

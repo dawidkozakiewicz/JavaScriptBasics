@@ -1,7 +1,10 @@
 .t-site-header {
-    background: $blue-text;
-    clip-path: ellipse(68% 450px at 50% 28%);
+    background: url('../images/header-tlo.jpg') 0 0 no-repeat;
+
+    @include large-up {
+        clip-path: ellipse(68% 450px at 50% 28%);
         padding-bottom: $grid-base * 4;
+    }
 
     &__top {
         padding-bottom: $grid-base * 2.5;
@@ -47,6 +50,18 @@
             font-size: $font-size-3;
             line-height: 1.66;
             margin-bottom: $grid-base * 6;
+        }
+    }
+
+    &__btn-divider {
+        color: $white;
+        display: block;
+        font-size: $font-size-5;
+        font-weight: 700;
+        margin: $grid-base * 2;
+
+        @include medium-up {
+            display: inline-block;
         }
     }
 }
