@@ -210,6 +210,35 @@ a {
       margin-left: 25px;
       width: auto; } }
 
+.t-our-advantages {
+  padding-top: 60px; }
+  .t-our-advantages__item {
+    margin-bottom: 40px; }
+    @media (min-width: 1200px) {
+      .t-our-advantages__item {
+        margin-bottom: 120px; } }
+
+.t-our-company {
+  padding-bottom: 60px;
+  padding-top: 90px; }
+  .t-our-company__left {
+    margin-bottom: 40px; }
+    @media (min-width: 800px) {
+      .t-our-company__left {
+        margin-bottom: 0; } }
+  .t-our-company__right {
+    text-align: center; }
+    @media (min-width: 800px) {
+      .t-our-company__right {
+        padding-right: 30px;
+        text-align: right; } }
+  .t-our-company__buttons {
+    display: flex;
+    flex-wrap: wrap; }
+  .t-our-company__btn {
+    margin-right: 30px;
+    margin-bottom: 25px; }
+
 .t-site-header {
   background: url("../images/header-tlo.jpg") 0 0 no-repeat; }
   @media (min-width: 1200px) {
