@@ -4,7 +4,7 @@
 body {
   background-color: #FFFFFF;
   color: #444444;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   margin: 0;
   padding: 0; }
@@ -116,16 +116,16 @@ a {
       background-color: #8ec9f2;
       color: #FFFFFF; }
   .c-btn--accent {
-    background-color: #60DC64;
+    background-color: #bbc4ef;
     color: #FFFFFF; }
     .c-btn--accent:hover {
-      background-color: #2bc430;
+      background-color: #7d8ee0;
       color: #FFFFFF; }
   .c-btn--dark-blue {
-    background-color: #3E5CC5;
+    background-color: #250acb;
     color: #FFFFFF; }
     .c-btn--dark-blue:hover {
-      background-color: #2a408c;
+      background-color: #180682;
       color: #FFFFFF; }
   .c-btn--light {
     background-color: #FFFFFF;
@@ -211,12 +211,12 @@ a {
       width: auto; } }
 
 .t-clinic-locator {
-  background: linear-gradient(45deg, #3E5CC5 0%, #5B8AF8 100%);
+  background: linear-gradient(175deg, #250acb 0%, #03A9F4 100%);
   padding-bottom: 45px;
   padding-top: 40px; }
   @media (min-width: 1200px) {
     .t-clinic-locator {
-      background: url("../images/map.png") 10% 80% no-repeat, linear-gradient(45deg, #3E5CC5 0%, #5B8AF8 100%);
+      background: url("../images/map.png") 10% 80% no-repeat, linear-gradient(175deg, #250acb 0%, #03A9F4 100%);
       padding-top: 200px; } }
   .t-clinic-locator__right {
     display: flex;
@@ -283,7 +283,7 @@ a {
     @media (min-width: 1200px) {
       .t-post-list__content {
         background-color: #F9FBFE;
-        clip-path: ellipse(68% 450px at 50% 0);
+        clip-path: ellipse(58% 420px at 50% 28%);
         position: absolute;
         left: 0;
         right: 0;
@@ -299,7 +299,7 @@ a {
     max-width: 349px;
     position: relative; }
   .t-post-list__badge {
-    background: linear-gradient(45deg, #3E5CC5 0%, #5B8AF8 100%);
+    background: linear-gradient(175deg, #250acb 0%, #03A9F4 100%);
     border-radius: 5px 0 0 5px;
     color: #FFFFFF;
     font-size: 0.875rem;
@@ -353,10 +353,10 @@ a {
     font-size: 0.625rem; }
 
 .t-site-header {
-  background: url("../images/header-tlo.jpg") 0 0 no-repeat; }
+  background: linear-gradient(175deg, #250acb 0%, #03A9F4 100%); }
   @media (min-width: 1200px) {
     .t-site-header {
-      clip-path: ellipse(68% 450px at 50% 28%);
+      clip-path: ellipse(68% 390px at 50% 35%);
       padding-bottom: 40px; } }
   .t-site-header__top {
     padding-bottom: 25px;
@@ -400,6 +400,9 @@ a {
     @media (min-width: 800px) {
       .t-site-header__btn-divider {
         display: inline-block; } }
+  .t-site-header__author-photo {
+    border-radius: 50%;
+    filter: drop-shadow(8px 8px 10px #000000); }
 
 .u-bg-white {
   background-color: #FFFFFF; }
