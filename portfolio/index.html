@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700i" rel="stylesheet">
 
@@ -8,10 +9,9 @@
     <title>Klinika</title>
     <link rel="stylesheet" href="prod-assets/style.css">
 </head>
-<body>
 
-<header class="t-site-header">
-    <div class="o-container">
+<body>
+    <div class="t-site-header__fixed-nav">
         <div class="t-site-header__top">
             <div class="o-row o-row--center-y">
                 <div class="o-col o-col--lg25">
@@ -20,222 +20,244 @@
                 <div class="o-col o-col--lg75 t-site-header__menu">
                     <nav class="c-nav">
                         <a class="c-nav__item" href="#">Start</a>
-                        <a class="c-nav__item" href="#">O firmie</a>
-                        <a class="c-nav__item" href="#">Usługi</a>
-                        <a class="c-nav__item" href="#">Specjalizacje</a>
-                        <a class="c-nav__item" href="#">Referencje</a>
+                        <a class="c-nav__item" href="#">O mnie</a>
+                        <a class="c-nav__item" href="#">Projekty</a>
+                        <a class="c-nav__item" href="#">Umiejętności</a>
+                        <a class="c-nav__item" href="#">Certyfikaty</a>
                         <a class="c-nav__item" href="#">Kontakt</a>
                     </nav>
                 </div>
             </div>
         </div>
-        <div class="t-site-header__divider">
-        </div>
-        <div class="t-site-header__hero">
-            <h1 class="c-heading c-heading--level1 c-heading--white c-heading--upper">Dawid Kozakiewicz</h1>
-            <p class="t-site-header__intro-text c-heading--upper">web developer</p>
-            <img src="images\ja.jpg" class="t-site-header__author-photo" alt="ja">
-
-            
-        </div>
     </div>
-</header>
+    <div class="t-site-header__divider">
+    </div>
+    <header class="t-site-header">
+        <div class="o-container">
 
-<!-- sekcja nasza firmie -->
-<section class="t-our-company">
-    <div class="o-container">
-        <div class="o-row o-row--center-y">
-            <div class="o-col o-col--md50 t-our-company__left">
-                <span class="c-label">Klinika</span>
-                <h2 class="c-heading c-heading--level2 c-heading--upper u-mb-2">Web Developer</h2>
-                <p class="u-mb-3">Lorem i Rem in corrupti commodi dolor repellendus necessitatibus iste vel facilis maiores amet a inventore, laboriosam vero nesciunt?</p>
-                <div class="t-our-company__buttons">
-                    <a class="c-btn c-btn--primary t-our-company__btn" href="#">Kardiologia</a>
-                    <a class="c-btn c-btn--primary t-our-company__btn" href="#">Okulistyka</a>
-                    <a class="c-btn c-btn--primary t-our-company__btn" href="#">Neurologia</a>
-                    <a class="c-btn c-btn--primary t-our-company__btn" href="#">Psychologia</a>
-                    <a class="c-btn c-btn--primary t-our-company__btn" href="#">Diagnostyka</a>
-                    <a class="c-btn c-btn--primary t-our-company__btn" href="#">Profilaktyka</a>
-                </div>
-            </div>
-            <div class="o-col o-col--md50 t-our-company__right">
-                <img src="images/klinika.png" alt="Nasza klinika">
+            <div class="t-site-header__hero">
+                <h1 class="c-heading c-heading--level1 c-heading--white c-heading--upper">Dawid Kozakiewicz</h1>
+                <p class="t-site-header__intro-text c-heading--upper">web developer</p>
+                <img src="images\ja.jpg" class="t-site-header__author-photo" alt="ja">
+
+
             </div>
         </div>
-    </div>
-</section>
+    </header>
 
-<!-- Zalety firmy -->
-<section class="t-our-advantages">
-    <div class="o-container">
-        <div class="o-row">
-            <div class="o-col o-col--md50 o-col--lg25 ">
-                <div class="c-icon-box">
-                    <div class="c-icon-box__image">
-                        <img src="images/icons/ikona-1.png" alt="ikona 1">
+    <!-- sekcja nasza firmie -->
+    <section class="t-our-company">
+        <div class="o-container">
+            <div class="o-row o-row--center-y">
+                <div class="o-col o-col--md50 t-our-company__left">
+                    <span class="c-label">Klinika</span>
+                    <h2 class="c-heading c-heading--level2 c-heading--upper u-mb-2">Web Developer</h2>
+                    <p class="u-mb-3">Lorem i Rem in corrupti commodi dolor repellendus necessitatibus iste vel facilis
+                        maiores amet a inventore, laboriosam vero nesciunt?</p>
+                    <div class="t-our-company__buttons">
+                        <a class="c-btn c-btn--primary t-our-company__btn" href="#">Kardiologia</a>
+                        <a class="c-btn c-btn--primary t-our-company__btn" href="#">Okulistyka</a>
+                        <a class="c-btn c-btn--primary t-our-company__btn" href="#">Neurologia</a>
+                        <a class="c-btn c-btn--primary t-our-company__btn" href="#">Psychologia</a>
+                        <a class="c-btn c-btn--primary t-our-company__btn" href="#">Diagnostyka</a>
+                        <a class="c-btn c-btn--primary t-our-company__btn" href="#">Profilaktyka</a>
                     </div>
-                    <h4 class="c-heading c-heading--level4 c-heading--upper">Pełny zakres usług</h4>
-                    <p class="c-icon-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quidem dolor quae!</p>
                 </div>
-            </div>
-            <div class="o-col o-col--md50 o-col--lg25 t-our-advantages__item">
-                <div class="c-icon-box">
-                    <div class="c-icon-box__image">
-                        <img src="images/icons/ikona-2.png" alt="ikona 2">
-                    </div>
-                    <h4 class="c-heading c-heading--level4 c-heading--upper">Pełny zakres usług</h4>
-                    <p class="c-icon-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quidem dolor quae!</p>
-                </div>
-            </div>
-            <div class="o-col o-col--md50 o-col--lg25 t-our-advantages__item">
-                <div class="c-icon-box">
-                    <div class="c-icon-box__image">
-                        <img src="images/icons/ikona-3.png" alt="ikona 3">
-                    </div>
-                    <h4 class="c-heading c-heading--level4 c-heading--upper">Pełny zakres usług</h4>
-                    <p class="c-icon-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quidem dolor quae!</p>
-                </div>
-            </div>
-            <div class="o-col o-col--md50 o-col--lg25 t-our-advantages__item">
-                <div class="c-icon-box">
-                    <div class="c-icon-box__image">
-                        <img src="images/icons/ikona-4.png" alt="ikona 4">
-                    </div>
-                    <h4 class="c-heading c-heading--level4 c-heading--upper">Pełny zakres usług</h4>
-                    <p class="c-icon-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quidem dolor quae!</p>
-                </div>
-            </div>
-            <div class="o-col o-col--md50 o-col--lg25 t-our-advantages__item">
-                <div class="c-icon-box">
-                    <div class="c-icon-box__image">
-                        <img src="images/icons/ikona-5.png" alt="ikona 6">
-                    </div>
-                    <h4 class="c-heading c-heading--level4 c-heading--upper">Pełny zakres usług</h4>
-                    <p class="c-icon-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quidem dolor quae!</p>
-                </div>
-            </div>
-            <div class="o-col o-col--md50 o-col--lg25 t-our-advantages__item">
-                <div class="c-icon-box">
-                    <div class="c-icon-box__image">
-                        <img src="images/icons/ikona-7.png" alt="ikona 7">
-                    </div>
-                    <h4 class="c-heading c-heading--level4 c-heading--upper">Pełny zakres usług</h4>
-                    <p class="c-icon-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quidem dolor quae!</p>
-                </div>
-            </div>
-            <div class="o-col o-col--md50 o-col--lg25 t-our-advantages__item">
-                <div class="c-icon-box">
-                    <div class="c-icon-box__image">
-                        <img src="images/icons/ikona-8.png" alt="ikona 8">
-                    </div>
-                    <h4 class="c-heading c-heading--level4 c-heading--upper">Pełny zakres usług</h4>
-                    <p class="c-icon-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quidem dolor quae!</p>
-                </div>
-            </div>
-            <div class="o-col o-col--md50 o-col--lg25 t-our-advantages__item">
-                <div class="c-icon-box">
-                    <div class="c-icon-box__image">
-                        <img src="images/icons/ikona-1.png" alt="ikona 1">
-                    </div>
-                    <h4 class="c-heading c-heading--level4 c-heading--upper">Pełny zakres usług</h4>
-                    <p class="c-icon-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quidem dolor quae!</p>
+                <div class="o-col o-col--md50 t-our-company__right">
+                    <img src="images/klinika.png" alt="Nasza klinika">
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Sekcja blog -->
-<section class="t-post-list">
-    <div class="t-post-list__content">
+    <!-- Zalety firmy -->
+    <section class="t-our-advantages">
         <div class="o-container">
             <div class="o-row">
-                <div class="o-col o-col--lg33">
-                    <div class="t-post-list__item">
-                        <div class="t-post-list__image">
-                            <img src="images/blog-1.jpg" alt="blog 1">
-                            <span class="t-post-list__badge">Klinika</span>
+                <div class="o-col o-col--md50 o-col--lg25 ">
+                    <div class="c-icon-box">
+                        <div class="c-icon-box__image">
+                            <img src="images/icons/ikona-1.png" alt="ikona 1">
                         </div>
-                        <span class="c-label t-post-list__date">23/05/2018</span>
-                        <h4 class="c-heading c-heading--level3 c-heading--upper">Nasze nowe biuro</h4>
-                        <p class="t-post-list__excerpt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem adipisci perferendis rerum excepturi veniam modi atque, consequatur accusantium.</p>
+                        <h4 class="c-heading c-heading--level4 c-heading--upper">Pełny zakres usług</h4>
+                        <p class="c-icon-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+                            quidem dolor quae!</p>
                     </div>
                 </div>
-                <div class="o-col o-col--lg33">
-                    <div class="t-post-list__item">
-                        <div class="t-post-list__image">
-                            <img src="images/blog-2.jpg" alt="blog 2">
-                            <span class="t-post-list__badge">Klinika</span>
+                <div class="o-col o-col--md50 o-col--lg25 t-our-advantages__item">
+                    <div class="c-icon-box">
+                        <div class="c-icon-box__image">
+                            <img src="images/icons/ikona-2.png" alt="ikona 2">
                         </div>
-                        <span class="c-label t-post-list__date">23/05/2018</span>
-                        <h4 class="c-heading c-heading--level3 c-heading--upper">Nasze nowe biuro</h4>
-                        <p class="t-post-list__excerpt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem adipisci perferendis rerum excepturi veniam modi atque, consequatur accusantium.</p>
+                        <h4 class="c-heading c-heading--level4 c-heading--upper">Pełny zakres usług</h4>
+                        <p class="c-icon-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+                            quidem dolor quae!</p>
                     </div>
                 </div>
-                <div class="o-col o-col--lg33">
-                    <div class="t-post-list__item">
-                        <div class="t-post-list__image">
-                            <img src="images/blog-3.jpg" alt="blog 3">
-                            <span class="t-post-list__badge">Klinika</span>
+                <div class="o-col o-col--md50 o-col--lg25 t-our-advantages__item">
+                    <div class="c-icon-box">
+                        <div class="c-icon-box__image">
+                            <img src="images/icons/ikona-3.png" alt="ikona 3">
                         </div>
-                        <span class="c-label t-post-list__date">23/05/2018</span>
-                        <h4 class="c-heading c-heading--level3 c-heading--upper">Nasze nowe biuro</h4>
-                        <p class="t-post-list__excerpt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem adipisci perferendis rerum excepturi veniam modi atque, consequatur accusantium.</p>
+                        <h4 class="c-heading c-heading--level4 c-heading--upper">Pełny zakres usług</h4>
+                        <p class="c-icon-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+                            quidem dolor quae!</p>
+                    </div>
+                </div>
+                <div class="o-col o-col--md50 o-col--lg25 t-our-advantages__item">
+                    <div class="c-icon-box">
+                        <div class="c-icon-box__image">
+                            <img src="images/icons/ikona-4.png" alt="ikona 4">
+                        </div>
+                        <h4 class="c-heading c-heading--level4 c-heading--upper">Pełny zakres usług</h4>
+                        <p class="c-icon-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+                            quidem dolor quae!</p>
+                    </div>
+                </div>
+                <div class="o-col o-col--md50 o-col--lg25 t-our-advantages__item">
+                    <div class="c-icon-box">
+                        <div class="c-icon-box__image">
+                            <img src="images/icons/ikona-5.png" alt="ikona 6">
+                        </div>
+                        <h4 class="c-heading c-heading--level4 c-heading--upper">Pełny zakres usług</h4>
+                        <p class="c-icon-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+                            quidem dolor quae!</p>
+                    </div>
+                </div>
+                <div class="o-col o-col--md50 o-col--lg25 t-our-advantages__item">
+                    <div class="c-icon-box">
+                        <div class="c-icon-box__image">
+                            <img src="images/icons/ikona-7.png" alt="ikona 7">
+                        </div>
+                        <h4 class="c-heading c-heading--level4 c-heading--upper">Pełny zakres usług</h4>
+                        <p class="c-icon-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+                            quidem dolor quae!</p>
+                    </div>
+                </div>
+                <div class="o-col o-col--md50 o-col--lg25 t-our-advantages__item">
+                    <div class="c-icon-box">
+                        <div class="c-icon-box__image">
+                            <img src="images/icons/ikona-8.png" alt="ikona 8">
+                        </div>
+                        <h4 class="c-heading c-heading--level4 c-heading--upper">Pełny zakres usług</h4>
+                        <p class="c-icon-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+                            quidem dolor quae!</p>
+                    </div>
+                </div>
+                <div class="o-col o-col--md50 o-col--lg25 t-our-advantages__item">
+                    <div class="c-icon-box">
+                        <div class="c-icon-box__image">
+                            <img src="images/icons/ikona-1.png" alt="ikona 1">
+                        </div>
+                        <h4 class="c-heading c-heading--level4 c-heading--upper">Pełny zakres usług</h4>
+                        <p class="c-icon-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+                            quidem dolor quae!</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Sekcja blog -->
+    <section class="t-post-list">
+        <div class="t-post-list__content">
+            <div class="o-container">
+                <div class="o-row">
+                    <div class="o-col o-col--lg33">
+                        <div class="t-post-list__item">
+                            <div class="t-post-list__image">
+                                <img src="images/blog-1.jpg" alt="blog 1">
+                                <span class="t-post-list__badge">Klinika</span>
+                            </div>
+                            <span class="c-label t-post-list__date">23/05/2018</span>
+                            <h4 class="c-heading c-heading--level3 c-heading--upper">Nasze nowe biuro</h4>
+                            <p class="t-post-list__excerpt">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Exercitationem adipisci perferendis rerum excepturi veniam modi atque, consequatur
+                                accusantium.</p>
+                        </div>
+                    </div>
+                    <div class="o-col o-col--lg33">
+                        <div class="t-post-list__item">
+                            <div class="t-post-list__image">
+                                <img src="images/blog-2.jpg" alt="blog 2">
+                                <span class="t-post-list__badge">Klinika</span>
+                            </div>
+                            <span class="c-label t-post-list__date">23/05/2018</span>
+                            <h4 class="c-heading c-heading--level3 c-heading--upper">Nasze nowe biuro</h4>
+                            <p class="t-post-list__excerpt">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Exercitationem adipisci perferendis rerum excepturi veniam modi atque, consequatur
+                                accusantium.</p>
+                        </div>
+                    </div>
+                    <div class="o-col o-col--lg33">
+                        <div class="t-post-list__item">
+                            <div class="t-post-list__image">
+                                <img src="images/blog-3.jpg" alt="blog 3">
+                                <span class="t-post-list__badge">Klinika</span>
+                            </div>
+                            <span class="c-label t-post-list__date">23/05/2018</span>
+                            <h4 class="c-heading c-heading--level3 c-heading--upper">Nasze nowe biuro</h4>
+                            <p class="t-post-list__excerpt">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Exercitationem adipisci perferendis rerum excepturi veniam modi atque, consequatur
+                                accusantium.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="o-row">
+                    <div class="o-col u-text-center">
+                        <a class="c-btn c-btn--primary" href="#">Więcej wpisów</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja lokalizator -->
+    <section class="t-clinic-locator">
+        <div class="o-container">
             <div class="o-row">
-                <div class="o-col u-text-center">
-                    <a class="c-btn c-btn--primary" href="#">Więcej wpisów</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Sekcja lokalizator -->
-<section class="t-clinic-locator">
-    <div class="o-container">
-        <div class="o-row">
-            <div class="o-col t-clinic-locator__right">
-                <div class="t-clinic-locator__content">
-                    <span class="c-label u-white">Oddziały</span>
-                    <h2 class="c-heading c-heading--level2 c-heading--upper c-heading--white t-clinic-locator__heading">Znajdź swoją klinikę</h2>
-                    <p class="t-clinic-locator__subheading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, asperiores. Amet eaque tempore doloremque ducimus. Error.</p>
-                    <div class="t-clinic-locator__buttons">
-                        <a class="c-btn c-btn--light t-clinic-locator__btn" href="#">Polska</a>
-                        <a class="c-btn c-btn--light t-clinic-locator__btn" href="#">Polska</a>
-                        <a class="c-btn c-btn--light t-clinic-locator__btn" href="#">Polska</a>
-                        <a class="c-btn c-btn--light t-clinic-locator__btn" href="#">Polska</a>
-                        <a class="c-btn c-btn--light t-clinic-locator__btn" href="#">Polska</a>
-                        <a class="c-btn c-btn--light t-clinic-locator__btn" href="#">Polska</a>
+                <div class="o-col t-clinic-locator__right">
+                    <div class="t-clinic-locator__content">
+                        <span class="c-label u-white">Oddziały</span>
+                        <h2 class="c-heading c-heading--level2 c-heading--upper c-heading--white t-clinic-locator__heading">Znajdź
+                            swoją klinikę</h2>
+                        <p class="t-clinic-locator__subheading">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Quibusdam, asperiores. Amet eaque tempore doloremque ducimus. Error.</p>
+                        <div class="t-clinic-locator__buttons">
+                            <a class="c-btn c-btn--light t-clinic-locator__btn" href="#">Polska</a>
+                            <a class="c-btn c-btn--light t-clinic-locator__btn" href="#">Polska</a>
+                            <a class="c-btn c-btn--light t-clinic-locator__btn" href="#">Polska</a>
+                            <a class="c-btn c-btn--light t-clinic-locator__btn" href="#">Polska</a>
+                            <a class="c-btn c-btn--light t-clinic-locator__btn" href="#">Polska</a>
+                            <a class="c-btn c-btn--light t-clinic-locator__btn" href="#">Polska</a>
+                        </div>
+                        <a class="c-btn c-btn--outline t-clinic-locator__more" href="#">Więcej miejsc &nbsp;&gt;&gt;</a>
                     </div>
-                    <a class="c-btn c-btn--outline t-clinic-locator__more" href="#">Więcej miejsc &nbsp;&gt;&gt;</a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer class="t-site-footer">
-    <div class="o-container">
-        <div class="o-row">
-            <div class="t-site-footer__item">
-                <div class="t-site-footer__heading">
-                    <img src="images/logo-blue.png" alt="logo niebieskie">
+    <footer class="t-site-footer">
+        <div class="o-container">
+            <div class="o-row">
+                <div class="t-site-footer__item">
+                    <div class="t-site-footer__heading">
+                        <img src="images/logo-blue.png" alt="logo niebieskie">
+                    </div>
+                    <div class="t-site-footer__address">
+                        <strong class="t-site-footer__label">Nasz główny adres</strong>
+                        <ul class="c-list c-list--unstyled">
+                            <li class="c-list__item t-site-footer__contact-item">The Hero Sp. z o. o. Sp. k.<br>ul.
+                                Kochanowskiego 32B lok. 2.41</li>
+                            <li class="c-list__item t-site-footer__contact-item">kom: 888-223-111<br>biuro@strefakursow.pl</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="t-site-footer__address">
-                    <strong class="t-site-footer__label">Nasz główny adres</strong>
-                    <ul class="c-list c-list--unstyled">
-                        <li class="c-list__item t-site-footer__contact-item">The Hero Sp. z o. o. Sp. k.<br>ul. Kochanowskiego 32B lok. 2.41</li>
-                        <li class="c-list__item t-site-footer__contact-item">kom: 888-223-111<br>biuro@strefakursow.pl</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="t-site-footer__item">
-                <div class="t-site-footer__heading">
-                    <h5 class="c-heading c-heading--level5 c-heading--upper t-site-footer__text-heading">Specjalizacje</h5>
-                </div>
+                <div class="t-site-footer__item">
+                    <div class="t-site-footer__heading">
+                        <h5 class="c-heading c-heading--level5 c-heading--upper t-site-footer__text-heading">Specjalizacje</h5>
+                    </div>
                     <ul class="c-list c-list--unstyled">
                         <li class="c-list__item">Kardiologia</li>
                         <li class="c-list__item">Neurologia</li>
@@ -244,11 +266,11 @@
                         <li class="c-list__item">Stomatologia</li>
                         <li class="c-list__item">Okulistyka</li>
                     </ul>
-            </div>
-            <div class="t-site-footer__item">
-                <div class="t-site-footer__heading">
-                    <h5 class="c-heading c-heading--level5 c-heading--upper t-site-footer__text-heading">Usługi</h5>
                 </div>
+                <div class="t-site-footer__item">
+                    <div class="t-site-footer__heading">
+                        <h5 class="c-heading c-heading--level5 c-heading--upper t-site-footer__text-heading">Usługi</h5>
+                    </div>
                     <ul class="c-list c-list--unstyled">
                         <li class="c-list__item">Badania</li>
                         <li class="c-list__item">Diagnostyka</li>
@@ -257,11 +279,11 @@
                         <li class="c-list__item">Profilaktyka</li>
                         <li class="c-list__item">Promocja zdrowia</li>
                     </ul>
-            </div>
-            <div class="t-site-footer__item">
-                <div class="t-site-footer__heading">
-                    <h5 class="c-heading c-heading--level5 c-heading--upper t-site-footer__text-heading">Zasoby</h5>
                 </div>
+                <div class="t-site-footer__item">
+                    <div class="t-site-footer__heading">
+                        <h5 class="c-heading c-heading--level5 c-heading--upper t-site-footer__text-heading">Zasoby</h5>
+                    </div>
                     <ul class="c-list c-list--unstyled">
                         <li class="c-list__item">Kariera</li>
                         <li class="c-list__item">Blog</li>
@@ -270,15 +292,16 @@
                         <li class="c-list__item">Twoje dane</li>
                         <li class="c-list__item">Bezpieczeństwo</li>
                     </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="t-site-footer__copy u-bg-light">
-        <div class="o-container t-site-footer__copy-text u-text-center">
-            Lorem ipsum dolor sit amet.
+        <div class="t-site-footer__copy u-bg-light">
+            <div class="o-container t-site-footer__copy-text u-text-center">
+                Lorem ipsum dolor sit amet.
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 </body>
+
 </html>

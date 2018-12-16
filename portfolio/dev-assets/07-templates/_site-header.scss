@@ -1,14 +1,31 @@
 .t-site-header {
     background: $blue-gradient;
+    margin-top: 289px;
+
+    @include large-up {
+        margin-top: 47px;
+    }
+
 
     @include large-up {
         clip-path: ellipse(68% 390px at 50% 35%);
         padding-bottom: $grid-base * 4;
+        position: sticky;
+    }
+
+    &__fixed-nav {
+        position: fixed;
+        width: 100%;
+        z-index: 2000;
+        background-color: $black;
     }
 
     &__top {
-        padding-bottom: $grid-base * 2.5;
-        padding-top: $grid-base * 2.5;
+        // padding-bottom: $grid-base * 2.5;
+        // padding-top: $grid-base * 2.5;
+        background-color: $black;
+        margin: 0 auto;
+        width: 70%;
     }
 
     &__menu {
@@ -31,7 +48,7 @@
         padding-top: $grid-base * 5;
         margin: 0 auto;
         text-align: center;
-        
+
         @include large-up {
             padding-bottom: $grid-base * 12;
             padding-top: $grid-base * 11;
@@ -45,7 +62,7 @@
         font-size: $font-size-4;
         margin-bottom: $grid-base * 2;
         margin-top: $grid-base * 3;
-        
+
         @include large-up {
             font-size: $font-size-3;
             line-height: 1.66;
@@ -69,6 +86,6 @@
         border-radius: 50%;
         filter: drop-shadow(8px 8px 10px $black);
 
-        }
-
     }
+
+}
