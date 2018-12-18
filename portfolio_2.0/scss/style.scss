@@ -1,14 +1,15 @@
 $primary: #3292a6;
-$primary-overlay: rgba(50, 146, 166, 0.8);
+$primary-overlay: #09090991;
 
 body {
   margin-top: 105px;
+  background-color: #605b7e;
 }
 
 .navbar {
   box-shadow: 2px 2px 5px $primary;
   opacity: 0.9;
-  background: rgb(13, 58, 206);
+  background: #fdfeffe0;
 
   .nav-item {
     font-size: 1.4rem;
@@ -18,9 +19,13 @@ body {
 
 #showcase {
   position: relative;
-  background: url('../img/mountains.jpg');
+  background: url('../img/background.jpg');
   min-height: 600px;
-
+  img {
+    // position: relative;
+    margin-top: 150px;
+    border-radius: 50%;
+  }
   .primary-overlay {
     background: $primary-overlay;
     position: absolute;
@@ -57,7 +62,7 @@ body {
     min-height: 500px;
 
     h1 {
-      font-size: 4rem;
+      font-size: 3rem;
     }
   }
 

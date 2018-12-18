@@ -1,20 +1,24 @@
 body {
-  margin-top: 105px; }
+  margin-top: 105px;
+  background-color: #605b7e; }
 
 .navbar {
   box-shadow: 2px 2px 5px #3292a6;
   opacity: 0.9;
-  background: #0d3ace; }
+  background: #fdfeffe0; }
   .navbar .nav-item {
     font-size: 1.4rem;
     padding-right: 1.4rem; }
 
 #showcase {
   position: relative;
-  background: url("../img/mountains.jpg");
+  background: url("../img/background.jpg");
   min-height: 600px; }
+  #showcase img {
+    margin-top: 150px;
+    border-radius: 50%; }
   #showcase .primary-overlay {
-    background: rgba(50, 146, 166, 0.8);
+    background: #09090991;
     position: absolute;
     top: 0;
     left: 0;
@@ -40,6 +44,6 @@ body {
   #showcase {
     min-height: 500px; }
     #showcase h1 {
-      font-size: 4rem; }
+      font-size: 3rem; }
   .mb-resp {
     margin-bottom: 1rem; } }
