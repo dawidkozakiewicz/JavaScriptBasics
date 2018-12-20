@@ -1,9 +1,12 @@
 $primary: #3292a6;
 $primary-overlay: #09090991;
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 body {
   margin-top: 105px;
   background-color: #605b7e;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 .navbar {
@@ -15,6 +18,11 @@ body {
     font-size: 1.4rem;
     padding-right: 1.4rem;
   }
+i {
+  font-size: 3rem;
+  margin-right: 2rem;
+}
+
 }
 
 #showcase {
@@ -55,6 +63,10 @@ body {
   .fab {
     color: #fff;
   }
+}
+
+#accordion {
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
