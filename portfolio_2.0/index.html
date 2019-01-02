@@ -5,10 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <title>Bootstrap Theme</title>
 </head>
 
@@ -16,8 +19,8 @@
   <nav class="navbar navbar-expand-md navbar-light fixed-top py-4" id="main-nav">
     <div class="container">
       <a href="#home" class="navbar-brand">
-        <i class="fas fa-laptop-code"></i>
-        <h3 class="d-inline align-middle">dawid kozakiewicz</h3>
+        <img src="img/mlogo.png" width="50" height="50" alt="">
+        <h3 class="d-inline align-middle h6">Dawid Kozakiewicz</h3>
       </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
@@ -25,16 +28,16 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#home" class="nav-link">Start</a>
+            <a href="#home" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link">O mnie</a>
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="#authors" class="nav-link">Portfolio</a>
+            <a href="#authors" class="nav-link">Meet The Authors</a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link">Kontakt</a>
+            <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
       </div>
@@ -47,17 +50,17 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 text-center">
-            <h1 class="mt-5 pt-5">
-              DAWID KOZAKIEWICZ </h2>
-              <h2>WEB DEWELOPER</h2>
-
-          </div>
-
-          <div class="col-lg-6 text-center">
-            <img src="img\ja.jpg" alt="ja">
+            <h1 class="display-2 mt-5 pt-5 text-uppercase" data-aos="fade-right">
+              dawid kozakiewicz
+            </h1>
+            <h2 class="text-uppercase h4">web developer</h2>
+            <a href="#" class="btn btn-outline-secondary btn-lg text-white">
+              <i class="fas fa-arrow-right"></i> Read More
             </a>
           </div>
-
+          <div class="col-lg-6 d-flex justify-content-center">
+            <img src="img/ja.jpg" alt="" class="img-fluid d-none d-lg-block align-self-center rounded-circle" data-aos="fade-left">
+          </div>
         </div>
       </div>
     </div>
@@ -132,8 +135,7 @@
               Why This Book?
             </h1>
             <p class="lead pb-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus obcaecati alias rerum dolore fugiat
-              debitis?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus obcaecati alias rerum dolore fugiat debitis?
             </p>
           </div>
 
@@ -143,19 +145,16 @@
               <div class="card-header">
                 <h5 class="mb-0">
                   <div href="#collapse1" data-toggle="collapse" data-parent="#accordion">
-                    <i class="fas fa-star"></i> DLACZEGO NIE POLECAM KODILLI?
+                    <i class="fas fa-arrow-circle-down"></i> Get Inspired
                   </div>
                 </h5>
               </div>
 
               <div id="collapse1" class="collapse show">
                 <div class="card-body">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit odit laborum qui, debitis, sequi
-                  dolores nobis mollitia
-                  labore quasi earum laboriosam nihil cupiditate magnam iusto nostrum doloremque accusantium
-                  repudiandae
-                  expedita autem et, repellendus suscipit consequatur! Alias, maiores amet sunt ab inventore illo,
-                  deleniti
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit odit laborum qui, debitis, sequi dolores nobis mollitia
+                  labore quasi earum laboriosam nihil cupiditate magnam iusto nostrum doloremque accusantium repudiandae
+                  expedita autem et, repellendus suscipit consequatur! Alias, maiores amet sunt ab inventore illo, deleniti
                   facilis consequatur tenetur nam pariatur fuga nisi!
                 </div>
               </div>
@@ -165,37 +164,17 @@
               <div class="card-header">
                 <h5 class="mb-0">
                   <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
-                    <i class="fas fa-star"></i> W JAKI SPOSÓB SIE UCZĘ?
+                    <i class="fas fa-arrow-circle-down"></i> Gain The Knowledge
+                  </div>
                 </h5>
               </div>
 
               <div id="collapse2" class="collapse">
                 <div class="card-body">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus ducimus voluptatem, impedit,
-                  obcaecati voluptatum molestiae consectetur sapiente commodi omnis voluptates quidem! Voluptate
-                  explicabo similique ex minima reiciendis amet sapiente quidem et vitae expedita quo cum quod hic
-                  numquam praesentium laudantium iure non placeat alias error harum, porro blanditiis repudiandae.
-                  Voluptates, soluta quas nostrum est vero magnam minima libero pariatur natus? Cumque illum
-                  necessitatibus et? Illo ad necessitatibus quidem. Omnis earum laudantium commodi possimus. Qui et
-                  debitis accusamus minus ullam repellat alias nihil dolorem ea? Tempora nam nesciunt in illo
-                  architecto, totam itaque eligendi voluptatibus molestias ipsum, veritatis dicta maiores quasi
-                  mollitia minima culpa non aperiam distinctio corporis atque obcaecati. Officia magnam tempore enim
-                  unde mollitia iste ratione, pariatur veniam expedita dolores consequatur exercitationem qui nobis
-                  accusamus iure nam repellendus cupiditate perspiciatis voluptates veritatis laborum, quidem
-                  similique. Recusandae consequatur incidunt eaque deserunt! Adipisci excepturi sequi reprehenderit
-                  nam! Inventore assumenda exercitationem recusandae obcaecati, tempore corrupti nulla deleniti ratione
-                  sed iure praesentium iusto eaque amet numquam repudiandae, ut sunt doloremque sit est voluptatibus!
-                  Consequatur perferendis iusto laborum excepturi. Numquam doloribus, labore molestiae tempora
-                  molestias reiciendis vitae sunt provident repellat dolor nam ducimus, animi nesciunt necessitatibus
-                  qui ipsam similique? Totam optio sit reiciendis numquam! Cumque vel omnis tenetur totam dolorum. Ut
-                  eaque repellat quia facilis, praesentium, quasi accusamus natus tempora quae excepturi laudantium
-                  beatae labore. Itaque quam omnis voluptatum maiores similique magni praesentium, quia consectetur in
-                  voluptatibus eum animi pariatur neque at odio molestiae incidunt, sint perferendis! Esse cupiditate
-                  aliquam laboriosam modi consectetur doloremque vero soluta exercitationem nobis eaque, ab, ipsam quia
-                  doloribus obcaecati quo explicabo repellat. Deleniti incidunt suscipit assumenda ipsam cupiditate.
-                  Odio inventore placeat veniam doloribus sunt nam dicta sapiente vel, natus repudiandae ab obcaecati
-                  iste, ipsa molestiae non quidem tempore hic consequatur temporibus animi, exercitationem eius
-                  accusantium atque cumque. Consectetur, laboriosam.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit odit laborum qui, debitis, sequi dolores nobis mollitia
+                  labore quasi earum laboriosam nihil cupiditate magnam iusto nostrum doloremque accusantium repudiandae
+                  expedita autem et, repellendus suscipit consequatur! Alias, maiores amet sunt ab inventore illo, deleniti
+                  facilis consequatur tenetur nam pariatur fuga nisi!
                 </div>
               </div>
             </div>
@@ -204,19 +183,16 @@
               <div class="card-header">
                 <h5 class="mb-0">
                   <div href="#collapse3" data-toggle="collapse" data-parent="#accordion">
-                    <i class="fas fa-star"></i> Open Your Mind
+                    <i class="fas fa-arrow-circle-down"></i> Open Your Mind
                   </div>
                 </h5>
               </div>
 
               <div id="collapse3" class="collapse">
                 <div class="card-body">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit odit laborum qui, debitis, sequi
-                  dolores nobis mollitia
-                  labore quasi earum laboriosam nihil cupiditate magnam iusto nostrum doloremque accusantium
-                  repudiandae
-                  expedita autem et, repellendus suscipit consequatur! Alias, maiores amet sunt ab inventore illo,
-                  deleniti
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit odit laborum qui, debitis, sequi dolores nobis mollitia
+                  labore quasi earum laboriosam nihil cupiditate magnam iusto nostrum doloremque accusantium repudiandae
+                  expedita autem et, repellendus suscipit consequatur! Alias, maiores amet sunt ab inventore illo, deleniti
                   facilis consequatur tenetur nam pariatur fuga nisi!
                 </div>
               </div>
@@ -250,8 +226,7 @@
               <img src="img/person1.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
               <h3>Susan Williams</h3>
               <h5 class="text-muted">Lead Writer</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas
-                officia.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas officia.</p>
               <div class="d-flex justify-content-center">
                 <div class="p-4">
                   <a href="http://facebook.com">
@@ -280,8 +255,7 @@
               <img src="img/person2.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
               <h3>Grace Smith</h3>
               <h5 class="text-muted">Co-Writer</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas
-                officia.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas officia.</p>
               <div class="d-flex justify-content-center">
                 <div class="p-4">
                   <a href="http://facebook.com">
@@ -310,8 +284,7 @@
               <img src="img/person3.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
               <h3>John Doe</h3>
               <h5 class="text-muted">Editor</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas
-                officia.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas officia.</p>
               <div class="d-flex justify-content-center">
                 <div class="p-4">
                   <a href="http://facebook.com">
@@ -340,147 +313,7 @@
               <img src="img/person4.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
               <h3>Kevin Swanson</h3>
               <h5 class="text-muted">Designer</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas
-                officia.</p>
-              <div class="d-flex justify-content-center">
-                <div class="p-4">
-                  <a href="http://facebook.com">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                </div>
-                <div class="p-4">
-                  <a href="http://twitter.com">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </div>
-                <div class="p-4">
-                  <a href="http://instagram.com">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="authors" class="my-5 text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="info-header mb-5">
-            <h1 class="text-primary pb-3">
-              Meet The Authors
-            </h1>
-            <p class="lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laborum numquam aperiam dolores a porro!
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <img src="img/person1.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
-              <h3>Susan Williams</h3>
-              <h5 class="text-muted">Lead Writer</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas
-                officia.</p>
-              <div class="d-flex justify-content-center">
-                <div class="p-4">
-                  <a href="http://facebook.com">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                </div>
-                <div class="p-4">
-                  <a href="http://twitter.com">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </div>
-                <div class="p-4">
-                  <a href="http://instagram.com">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <img src="img/person2.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
-              <h3>Grace Smith</h3>
-              <h5 class="text-muted">Co-Writer</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas
-                officia.</p>
-              <div class="d-flex justify-content-center">
-                <div class="p-4">
-                  <a href="http://facebook.com">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                </div>
-                <div class="p-4">
-                  <a href="http://twitter.com">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </div>
-                <div class="p-4">
-                  <a href="http://instagram.com">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <img src="img/person3.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
-              <h3>John Doe</h3>
-              <h5 class="text-muted">Editor</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas
-                officia.</p>
-              <div class="d-flex justify-content-center">
-                <div class="p-4">
-                  <a href="http://facebook.com">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                </div>
-                <div class="p-4">
-                  <a href="http://twitter.com">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </div>
-                <div class="p-4">
-                  <a href="http://instagram.com">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="card">
-            <div class="card-body">
-              <img src="img/person4.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
-              <h3>Kevin Swanson</h3>
-              <h5 class="text-muted">Designer</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas
-                officia.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas officia.</p>
               <div class="d-flex justify-content-center">
                 <div class="p-4">
                   <a href="http://facebook.com">
@@ -579,9 +412,7 @@
     $('#year').text(new Date().getFullYear());
 
     // Init Scrollspy
-    $('body').scrollspy({
-      target: '#main-nav'
-    });
+    $('body').scrollspy({ target: '#main-nav' });
 
     // Smooth Scrolling
     $("#main-nav a").on('click', function (event) {
@@ -599,6 +430,9 @@
       }
     });
   </script>
+  <script>
+  AOS.init();
+</script>
 </body>
 
 </html>

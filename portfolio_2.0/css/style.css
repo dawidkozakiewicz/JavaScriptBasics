@@ -1,29 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
 body {
-  margin-top: 105px;
-  background-color: #605b7e;
-  font-family: 'Raleway', sans-serif; }
+  margin-top: 105px; }
 
 .navbar {
   box-shadow: 2px 2px 5px #3292a6;
   opacity: 0.9;
-  background: #fdfeffe0; }
+  background: #fff; }
   .navbar .nav-item {
     font-size: 1.4rem;
     padding-right: 1.4rem; }
-  .navbar i {
-    font-size: 3rem;
-    margin-right: 2rem; }
 
 #showcase {
   position: relative;
-  background: url("../img/background.jpg");
+  background: url("../img/mountains.jpg");
   min-height: 600px; }
-  #showcase img {
-    margin-top: 150px;
-    border-radius: 50%; }
   #showcase .primary-overlay {
-    background: #09090991;
+    background: rgba(50, 146, 166, 0.8);
     position: absolute;
     top: 0;
     left: 0;
@@ -44,9 +35,6 @@ body {
 
 #authors .fab {
   color: #fff; }
-
-#accordion {
-  cursor: pointer; }
 
 @media (max-width: 768px) {
   #showcase {
