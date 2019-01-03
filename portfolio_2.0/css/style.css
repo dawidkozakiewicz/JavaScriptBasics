@@ -4,7 +4,8 @@ body {
 .navbar {
   box-shadow: 2px 2px 5px #3292a6;
   opacity: 0.9;
-  background: #fff; }
+  background: #fff;
+  transition: top 0.3s; }
   .navbar .nav-item {
     font-size: 1.4rem;
     padding-right: 1.4rem; }
