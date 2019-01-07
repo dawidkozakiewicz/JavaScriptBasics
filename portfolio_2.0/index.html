@@ -59,7 +59,7 @@
             </a>
           </div>
           <div class="col-lg-6 d-flex justify-content-center">
-            <img src="img/ja.jpg" alt="" class="img-fluid d-none d-lg-block align-self-center rounded-circle" data-aos="fade-left">
+            <img src="img/ja.jpg" alt="author" class="img-fluid d-none d-lg-block align-self-center rounded-circle" data-aos="fade-left">
           </div>
         </div>
       </div>
@@ -69,55 +69,69 @@
   <!-- NEWSLETTER -->
   <section id="newsletter" class="bg-dark text-white py-5">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <input type="text" class="form-control form-control-lg mb-resp" placeholder="Enter Name">
-        </div>
-        <div class="col-md-4">
-          <input type="email" class="form-control form-control-lg mb-resp" placeholder="Enter Email">
-        </div>
-        <div class="col-md-4">
-          <button class="btn btn-primary btn-lg btn-block">
-            <i class="fas fa-envelope-open-o"></i> Subscribe
-          </button>
-        </div>
-      </div>
+      <h1 data-aos="fade-down">Używane technologie:</h1>
     </div>
   </section>
 
   <!-- BOXES -->
   <section id="boxes" class="py-5">
     <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-3">
+          <div class="card text-center border-primary mb-resp">
+            <div class="card-body">
+              <img data-aos="flip-left" class="w-100 h-100" src="img\ikony\html5.png" alt="html">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center text-white mb-resp">
+            <div class="card-body">
+              <img data-aos="flip-left" class="w-100 h-100" src="img\ikony\css3.png" alt="css3">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center border-primary mb-resp">
+            <div class="card-body">
+              <img data-aos="flip-left" class="w-100 h-100" src="img\ikony\js5.png" alt="js5">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center text-white">
+            <div class="card-body">
+              <img data-aos="flip-left" class="w-100 h-100" src="img\ikony\jquery.png" alt="jquery">
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row">
         <div class="col-md-3">
           <div class="card text-center border-primary mb-resp">
             <div class="card-body">
-              <h3 class="text-primary">Be Better</h3>
-              <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, deserunt.</p>
+              <img data-aos="flip-left" class="w-100 h-100" src="img\ikony\sass.png" alt="sass">
             </div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card text-center bg-primary text-white mb-resp">
+          <div class="card text-center text-white mb-resp">
             <div class="card-body">
-              <h3>Be Smarter</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, deserunt.</p>
+              <img data-aos="flip-left" class="w-100 h-100" src="img\ikony\bootstrap.png" alt="bootstrap">
             </div>
           </div>
         </div>
         <div class="col-md-3">
           <div class="card text-center border-primary mb-resp">
             <div class="card-body">
-              <h3 class="text-primary">Be Faster</h3>
-              <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, deserunt.</p>
+              <img data-aos="flip-left" class="w-100 h-100" src="img\ikony\nodejs.png" alt="nodejs">
             </div>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card text-center bg-primary text-white">
+          <div class="card text-center text-white">
             <div class="card-body">
-              <h3>Be Stronger</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, deserunt.</p>
+              <img data-aos="flip-left" class="w-100 h-100" src="img\ikony\ajax.png" alt="ajax">
             </div>
           </div>
         </div>
@@ -132,7 +146,7 @@
         <div class="col">
           <div class="info-header mb-5">
             <h1 class="text-info pb-3">
-              Kilka słów o mnie.
+              Kilka słów o mnie:
             </h1>
             <p class="lead pb-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus obcaecati alias rerum dolore fugiat debitis?
@@ -210,7 +224,7 @@
         <div class="col">
           <div class="info-header mb-5">
             <h1 class="text-primary pb-3">
-              Meet The Authors
+              Portfolio
             </h1>
             <p class="lead">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laborum numquam aperiam dolores a porro!
@@ -440,7 +454,7 @@ var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("main-nav").style.top = "0";
   } else {
-    document.getElementById("main-nav").style.top = "-130px";
+    document.getElementById("main-nav").style.top = "-100%";
   }
   prevScrollpos = currentScrollPos;
 }
