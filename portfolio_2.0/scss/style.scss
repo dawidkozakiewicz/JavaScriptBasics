@@ -3,6 +3,11 @@ $primary-overlay: rgba(50, 146, 166, 0.8);
 
 body {
   margin-top: 105px;
+  i {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 .navbar {

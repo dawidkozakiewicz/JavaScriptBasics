@@ -1,5 +1,7 @@
 body {
   margin-top: 105px; }
+  body i:hover {
+    cursor: pointer; }
 
 .navbar {
   transition: top 0.3s; }
