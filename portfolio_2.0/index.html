@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
   <meta charset="UTF-8">
@@ -12,11 +12,13 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <title>Bootstrap Theme</title>
+  <title>Dawid Kozakiewicz</title>
+  <link rel='shortcut icon' href='img/internet.png' type='image/x-icon' />
+
 </head>
 
 <body id="home" data-spy="scroll" data-target="#main-nav" class="bg-dark text-primary">
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-4" id="main-nav">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top border-bottom border-secondary py-4" id="main-nav">
     <div class="container">
       <a href="#home" class="navbar-brand">
         <img src="img/mlogo.png" width="50" height="50" alt="">
@@ -404,14 +406,14 @@
         <div class="col-lg-9">
           <h3>Napisz do mnie</h3>
           <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, temporibus!</p>
-          <form>
+          <form method="post" name="contactform" action="nm.php">
             <div class="input-group input-group-lg mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text">
                   <i class="fas fa-user"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" placeholder="Name">
+              <input type="text" class="form-control" placeholder="Name" name="name" required>
             </div>
 
             <div class="input-group input-group-lg mb-3">
@@ -420,7 +422,7 @@
                   <i class="fas fa-envelope"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" placeholder="Email">
+              <input type="email" name="email" class="form-control" placeholder="Email" required>
             </div>
 
             <div class="input-group input-group-lg mb-3">
@@ -429,10 +431,10 @@
                   <i class="fas fa-pencil-alt"></i>
                 </span>
               </div>
-              <textarea class="form-control" placeholder="Message" rows="5"></textarea>
+              <textarea name="message" class="form-control" placeholder="Message" rows="5" required></textarea>
             </div>
 
-            <input type="submit" value="Submit" class="btn btn-primary btn-block btn-lg">
+            <input type="submit" name="submit" value="Submit" class="btn btn-primary btn-block btn-lg">
           </form>
         </div>
 
@@ -447,9 +449,14 @@
   <footer id="main-footer" class="py-5 bg-primary text-white">
     <div class="container">
       <div class="row text-center">
+        <div class="col-md-4 bg-info border border-white">Icons made by <a href="https://www.flaticon.com/authors/smashicons"
+            title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+          is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+            3.0 BY</a></div>
         <div class="col-md-6 ml-auto">
           <p class="lead">
-            Copyright &copy;
+            Copyright &copy;<br>
+
             <span id="year"></span>
           </p>
         </div>
