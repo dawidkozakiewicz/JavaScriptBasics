@@ -18,6 +18,7 @@
 </head>
 
 <body id="home" data-spy="scroll" data-target="#main-nav" class="bg-dark text-primary">
+
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top border-bottom border-secondary py-4" id="main-nav">
     <div class="container">
       <a href="#home" class="navbar-brand">
@@ -309,7 +310,23 @@
         <div class="col-lg-3 col-md-6">
           <div class="card">
             <div class="card-body">
-              <img src="img/person2.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+              <img src="img/person2.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3" data-toggle="modal"
+                data-target=".bd-example-modal-lg">
+
+              <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button> -->
+
+              <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <img class="w-100 mt-0" src="img/apka_1.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+
+
+
+
               <h3>Apka</h3>
               <h5 class="text-muted">opis:</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed commodi nostrum, ab libero voluptas
@@ -321,11 +338,12 @@
                   </a>
                 </div>
                 <div class="p-3">
-                  <a href="https://github.com/dawidkozakiewicz/JavaScriptBasics/tree/master/JavaScript/notes-app" target="_blank">
+                  <a href="https://github.com/dawidkozakiewicz/JavaScriptBasics/tree/master/JavaScript/notes-app"
+                    target="_blank">
                     <button type="button" class="btn btn-info text-uppercase">kod żródłowy</button>
                   </a>
                 </div>
-                
+
 
               </div>
             </div>
@@ -393,7 +411,10 @@
         </div>
       </div>
     </div>
+
+
   </section>
+
 
   <!-- CONTACT -->
   <section id="contact" class="bg-light py-5">
