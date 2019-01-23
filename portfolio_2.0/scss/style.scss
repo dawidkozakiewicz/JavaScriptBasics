@@ -3,6 +3,7 @@ $primary-overlay: rgba(50, 146, 166, 0.8);
 
 body {
   margin-top: 105px;
+
   i {
     &:hover {
       cursor: pointer;
@@ -11,7 +12,7 @@ body {
 }
 
 .navbar {
-  
+
   transition: top 0.3s;
 
   .nav-item {
@@ -47,6 +48,7 @@ body {
   }
 
   
+
 }
 
 @media (max-width: 768px) {
