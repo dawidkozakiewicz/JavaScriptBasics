@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 body {
-  margin-top: 105px; }
+  margin-top: 105px;
+  font-family: 'Raleway', sans-serif; }
   body i:hover {
     cursor: pointer; }
 
@@ -33,6 +35,6 @@ body {
   #showcase {
     min-height: 500px; }
     #showcase h1 {
-      font-size: 3rem; }
+      font-size: 2.7rem; }
   .mb-resp {
     margin-bottom: 1rem; } }
