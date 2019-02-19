@@ -23,7 +23,7 @@ const renderTodos = () => {
     } else {
         const messageEl = document.createElement('p')
         messageEl.classList.add('empty-message')
-        messageEl.textContent = 'There are no to-dos to show'
+        messageEl.textContent = 'Nie posiadasz zadań do wykonania'
         todoEl.appendChild(messageEl)
     }
 }
@@ -55,7 +55,7 @@ const generateTodoDOM = (todo) => {
     todoEl.appendChild(containerEl)
 
     // Setup the remove button
-    removeButton.textContent = 'remove'
+    removeButton.textContent = 'usuń'
     removeButton.classList.add('button', 'button--text')
     todoEl.appendChild(removeButton)
     removeButton.addEventListener('click', () => {
@@ -69,9 +69,8 @@ const generateTodoDOM = (todo) => {
 // Get the DOM elements for list summary
 const generateSummaryDOM = (incompleteTodos) => {
     const summary = document.createElement('h2')
-    const plural = incompleteTodos.length === 1 ? '' : 's'
     summary.classList.add('list-title')
-    summary.textContent = `You have ${incompleteTodos.length} todo${plural} left`
+    summary.textContent = `Ilość zadań do wykonania: ${incompleteTodos.length}`
     return summary
 }
 
