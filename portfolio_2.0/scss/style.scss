@@ -7,6 +7,7 @@ $primary-overlay: rgba(50, 146, 166, 0.8);
 body {
   margin-top: 105px;
   font-family: 'Raleway', sans-serif;
+
   i {
     &:hover {
       cursor: pointer;
@@ -28,15 +29,31 @@ body {
   position: relative;
   background: url("../img/trianglify.png");
   min-height: 600px;
+  background-attachment: fixed;
 
-  .primary-overlay {
-    background: $primary-overlay;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  // .primary-overlay {
+  //   background: $primary-overlay;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  // }
+}
+
+#newsletter {
+  transform: skewY(-4deg);
+
+  .container {
+    transform: skewY(4deg);
+
   }
+
+}
+
+#about {
+  background: url("../img/trianglify.png");
+  background-attachment: fixed;
 }
 
 .info-header {

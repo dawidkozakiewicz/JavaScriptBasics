@@ -9,6 +9,7 @@ Element   ->  house__kitchen
 Modifier  ->  house--condo
 
 */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 * {
     box-sizing: border-box;
@@ -22,7 +23,7 @@ html {
 
 body {
   color: #333333;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
 }
 
@@ -45,7 +46,7 @@ a {
 /* Header */
 
 .header {
-  background: #43799c;
+  background:  #fe840e;
   color: white;
   padding: 1.6rem 0;
 }
@@ -106,7 +107,8 @@ a {
 .button {
     background: #43799c;
     border: none;
-    border-bottom: 2px solid #396684;
+    border-bottom: 2px solid #dc620c;
+  background:  #fe840e;
     color: white;
     font-size: 1.4rem;
     font-weight: 300;
@@ -115,17 +117,10 @@ a {
 }
 
 .button:hover {
-    background: #396684;
+    background: #ff951f;
 }
 
-.button--secondary {
-    background: #888888;
-    border-bottom: 2px solid #717171;
-}
 
-.button--secondary:hover {
-    background: #6E6E6E;
-}
 
 /* Note editor */
 

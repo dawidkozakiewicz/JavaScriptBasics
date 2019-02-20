@@ -12,7 +12,7 @@ const generateNoteDOM = (note) => {
     if (note.title.length > 0) {
         textEl.textContent = note.title
     } else {
-        textEl.textContent = 'Unnamed note'
+        textEl.textContent = 'Nazwa domyślna'
     }
     textEl.classList.add('list-item__title')
     noteEl.appendChild(textEl)
@@ -45,7 +45,7 @@ const renderNotes = () => {
         })
     } else {
         const emptyMessage = document.createElement('p')
-        emptyMessage.textContent = 'No notes to show'
+        emptyMessage.textContent = 'Brak notatek do pokazania'
         emptyMessage.classList.add('empty-message')
         notesEl.appendChild(emptyMessage)
     }
