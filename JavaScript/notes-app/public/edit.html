@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="pl">
     <head>
-        <title>Aplikacja Notatki</title>
-        <link href="favicon.png" rel="icon">
-        <link href="styles.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Notes App</title>
+        <link href="./images/favicon.png" rel="icon">
+        <link href="./styles/styles.css" rel="stylesheet">
     </head>
     <body>
         <div class="header">
             <div class="container">
-                <h1 class="header__title">Aplikacja Notatki</h1>
+                <h1 class="header__title">Moje notatki</h1>
                 <h2 class="header__subtitle">Notuj, a nigdy nie zapomnisz!</h2>
             </div>
         </div>
         <div class="actions">
             <div class="actions__container actions__container--spaced">
-                <a href="/index.html">Wróć</a>
+                <a href="./index.html">POWRÓT</a>
                 <span id="last-edited"></span>
             </div>
         </div>
         <div class="container">
-            <input id="note-title" class="title-input" placeholder="Tytuł nonatki">
-            <textarea id="note-body" class="body-input" placeholder="Wprowadź treść notatki (notatki są zapisywania automatycznie)"></textarea>
-            <button id="remove-note"npm run build>Usuń notatkę</button>
+            <input id="note-title" class="title-input" placeholder="Tytuł notatki">
+            <textarea id="note-body" class="body-input" placeholder="Wprowadź treść notatki, a zapisze się automatycznie"></textarea>
+            <button id="remove-note" class="button">Usuń notatkę</button>
         </div>
 
-        <script src="edit-bundle.js"></script>
+        <script src="./scripts/edit-bundle.js"></script>
     </body>
 </html>

@@ -1,5 +1,7 @@
 import uuidv4 from 'uuid/v4'
 import moment from 'moment'
+import 'moment/locale/pl'  // without this line it didn't work
+moment.locale('pl')
 
 let notes = []
 
@@ -107,19 +109,5 @@ const updateNote = (id, updates) => {
 }
 
 notes = loadNotes()
-
-
-
-
-
-
-
-console.log(moment())
-console.log(moment().valueOf())
-console.log(notes)
-
-
-
-
 
 export { getNotes, createNote, removeNote, sortNotes, updateNote }

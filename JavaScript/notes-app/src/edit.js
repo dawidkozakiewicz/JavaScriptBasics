@@ -6,10 +6,6 @@ const bodyElement = document.querySelector('#note-body')
 const removeElement = document.querySelector('#remove-note')
 const dateElement = document.querySelector('#last-edited')
 const noteId = location.hash.substring(1)
-console.log(location)
-console.log(location.hash)
-console.log(noteId)
-console.log(typeof noteId)
 
 initializeEditPage(noteId)
 
@@ -29,7 +25,7 @@ bodyElement.addEventListener('input', (e) => {
 
 removeElement.addEventListener('click', (e) => {
     removeNote(noteId)
-    location.assign('/index.html')
+    location.assign('./index.html')
 })
 
 window.addEventListener('storage', (e) => {

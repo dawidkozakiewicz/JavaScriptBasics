@@ -12,13 +12,13 @@ const generateNoteDOM = (note) => {
     if (note.title.length > 0) {
         textEl.textContent = note.title
     } else {
-        textEl.textContent = 'Nazwa domyślna'
+        textEl.textContent = 'bez tytułu'
     }
     textEl.classList.add('list-item__title')
     noteEl.appendChild(textEl)
 
     // Setup the link
-    noteEl.setAttribute('href', `/edit.html#${note.id}`)
+    noteEl.setAttribute('href', `./edit.html#${note.id}`)
     noteEl.classList.add('list-item')
 
     // Setup the status message
@@ -45,7 +45,7 @@ const renderNotes = () => {
         })
     } else {
         const emptyMessage = document.createElement('p')
-        emptyMessage.textContent = 'Brak notatek do pokazania'
+        emptyMessage.textContent = 'Brak notatek'
         emptyMessage.classList.add('empty-message')
         notesEl.appendChild(emptyMessage)
     }
@@ -59,7 +59,7 @@ const initializeEditPage = (noteId) => {
     const note = notes.find((note) => note.id === noteId)
 
     if (!note) {
-        location.assign('/index.html')
+        location.assign('./index.html')
     }
 
     titleElement.value = note.title
@@ -69,7 +69,7 @@ const initializeEditPage = (noteId) => {
 
 // Generate the last edited message
 const generateLastEdited = (timestamp) => {
-    return `Last edited ${moment(timestamp).fromNow()}`
+    return `Ostatnio edytowano: ${moment(timestamp).fromNow()}`
 }
 
 export { generateNoteDOM, renderNotes, generateLastEdited, initializeEditPage}

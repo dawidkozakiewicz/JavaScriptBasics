@@ -1,0 +1,230 @@
+/* Base Styles */
+
+/*
+
+BEM (block, element, modifier)
+
+Block     ->  house
+Element   ->  house__kitchen
+Modifier  ->  house--condo
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333333;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  background-color: #fec80e;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+    color: #060606;
+    text-decoration: none;
+    font-size: 1.7rem;
+    border: 1.5px solid black;
+    padding: 4px;
+    border-radius: 10px;
+}
+    
+
+.actions a:hover {
+   
+   color: white;
+   background-color: #fe840e;
+   border: 1.5px solid #fe840e;
+}
+
+/* Container */
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+/* Header */
+
+.header {
+  background: #fe840e;
+  color: white;
+  padding: 1.6rem 0;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 1rem;
+
+}
+
+.header__title {
+  font-size: 3.2rem;
+  margin-bottom: .4rem;
+}
+
+.header__subtitle {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+/* Actions Bar */
+
+.actions {
+    background-color: #fe840e78;
+    border-bottom: 1px solid #fe840e;
+    padding: .8rem;
+    border-radius: 15px;
+    margin: 1rem;
+
+
+}
+
+.actions__container {
+    align-items: center;
+    display: flex;
+    max-width: 60rem;
+    margin: 0 auto;
+    min-height: 3rem;
+    padding: 0 1.6rem;
+}
+
+.actions__container--spaced {
+    justify-content: space-between
+}
+
+/* Form Inputs */
+
+.input {
+    border: 1px solid #DEDFE0;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    height: 3rem;
+    margin-right: .8rem;
+    padding: .4rem .8rem;
+    outline: none;
+
+}
+
+.dropdown {
+    border-radius: 0;
+    border: 1px solid #DEDFE0;
+    background: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    height: 3rem;
+    margin-right: .8rem;
+    border-radius: 15px;
+    outline: none;
+
+}
+
+.button {
+    background: #fe840e;
+    border: none;
+    border-bottom: 2px solid #ed730d;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: .8rem;
+    transition: background .3s ease;
+    border-radius: 15px;
+    outline: none;
+
+
+}
+
+.button:hover {
+    background: #ff951f;
+}
+
+/* .button--secondary {
+    background: #888888;
+    border-bottom: 2px solid #717171;
+}
+
+.button--secondary:hover {
+    background: #6E6E6E;
+} */
+
+/* Note editor */
+
+.title-input {
+    border: 1px solid #DEDFE0;
+    font-size: 2rem;
+    font-weight: 300;
+    display: block;
+    margin: 2.4rem 0;
+    padding: .8rem;
+    width: 100%;
+    border-radius: 15px;
+    outline: none;
+
+
+}
+
+.body-input {
+    border: 1px solid #DEDFE0;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 300;
+    display: block;
+    margin: 2.4rem 0;
+    min-height: 15rem;
+    padding: .8rem;
+    width: 100%;
+    border-radius: 15px;
+    outline: none;
+
+
+}
+
+/* Note List Item */
+
+.list-item {
+    text-decoration: none;
+    color: #333333;
+    background: #F7F7F7;
+    border: 1px solid #dedfe0;
+    margin: 1.6rem 0;
+    padding: 1.6rem;
+    display: block;
+    transition: background .3s ease;
+    border-radius: 15px;
+
+}
+
+.list-item:hover {
+    background: #eeeeee;
+}
+
+.list-item__title {
+    font-size: 1.8rem;
+    margin-bottom: .4rem
+}
+
+.list-item__subtitle {
+    color: #666;
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.empty-message {
+    text-align: center;
+    margin: 3.2rem 0;
+}

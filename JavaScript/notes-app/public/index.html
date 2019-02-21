@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 
-<html>
-    <head>
-        <title>Notes App</title>
-        <link href="favicon.png" rel="icon">
-        <link href="styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <header class="header">
-            <div class="container">
-                <h1 class="header__title">Aplikacja Notatki</h1>
-                <h2 class="header__subtitle">Notuj, a nigdy nie zapomnisz!</h2>
-            </div>
-        </header>
-        <div class="actions">
-            <div class="actions__container">
-                <input id="search-text" type="text" class="input" placeholder="Filtruj notatki">
-                <select id="filter-by" class="dropdown">
-                    <option value="byEdited">Sortowanie wg. ostatnio edytowanej</option>
-                    <option value="byCreated">Sortowanie wg. ostatnio stworzonej</option>
-                    <option value="alphabetical">Sortowanie alfabetyczne</option>
-                </select>
-            </div>
-        </div>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Notes App</title>
+    <link href="./images/favicon.png" rel="icon">
+    <link href="./styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
         <div class="container">
-            <div id="notes"></div>
-            <button id="create-note" class="button">Stwórz Notatkę</button>
-        </div>    
-        <script src="index-bundle.js"></script>
-    </body>
+            <h1 class="header__title">Moje Notatki</h1>
+            <h2 class="header__subtitle">Notuj, a nigdy nie zapomnisz!</h2>
+        </div>
+    </header>
+    <div class="actions">
+        <div class="actions__container">
+            <input id="search-text" type="text" class="input" placeholder="Filtruj notatki">
+            <select id="filter-by" class="dropdown">
+                <option value="byEdited">ostatnio edytowane</option>
+                <option value="byCreated">ostatnio stworzone</option>
+                <option value="alphabetical">alfabetycznie</option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+        <div id="notes"></div>
+        <button id="create-note" class="button">Stwórz Notatkę</button>
+    </div>
+    <script src="./scripts/index-bundle.js"></script>
+</body>
+
 </html>
