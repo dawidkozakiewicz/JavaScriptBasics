@@ -3,32 +3,41 @@
      margin: 0;
      padding: 0;
 }
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
  html {
      font-size: 62.5%;
 }
 
  body {
-     background: #2B292E;
+     background:  #00539c;
      color: #fafafa;
-     font-family: Helvetica, Arial, sans-serif;
-     font-size: 1.6rem;
+     font-size: 6rem;
      display: flex;
      align-items: center;
      justify-content: center;
      min-height: 100vh;
+     font-family: 'Montserrat', sans-serif;
+
 }
 
+.container {
+     border: 2px solid white;
+     border-radius: 15px;
+     padding: 10rem;
+}
+
+
  span {
-     border-bottom: 1px solid #534f59;
+     border-bottom: 2px solid white;
      display: inline-block;
-     font-size: 2rem;
-     height: 2.4rem;
+     font-size: 4rem;
+     height: 4rem;
      line-height: 2.4rem;
-     margin: 0 .1rem;
+     margin: 0 .5rem;
      text-align: center;
      text-transform: uppercase;
-     width: 2.4rem;
+     width: 4rem;
 }
 
  p {
@@ -42,17 +51,22 @@
 }
 
  .button {
-     background: #7044a0;
-     border: none;
-     border-bottom: 2px solid #603a88;
+     background: #00539c;
+     border: 1px solid white;
+     border-radius: 15px;
      cursor: pointer;
      color: white;
-     font-size: 1.4rem;
+     font-size: 2rem;
      font-weight: 300;
-     padding: .8rem;
+     padding: 1.5rem;
      transition: background .3s ease, color .3s ease;
-}
+     outline: none;
+ }
+
 
  .button:hover {
-     background: #5F3A87;
+     background: white;
+     color: #00539c;
+     border: 1px solid #00539c;
+
 }
