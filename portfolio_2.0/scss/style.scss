@@ -67,8 +67,22 @@ body {
     margin-top: -50px;
   }
 
+  .lenghten {
+    min-height: 200px;
+    max-height: 200px;
+    overflow: hidden;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: max-height 2s;
 
+    &:hover {
+      max-height: 800px;
+      cursor: context-menu;
+    }
+  }
+}
 
+.card {
+  margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
@@ -84,3 +98,19 @@ body {
     margin-bottom: 1rem;
   }
 }
+
+#contact {
+  position: relative;
+  .forvideo {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    .myvideo {
+      width: 100%;
+    }
+  }
+}
+
+

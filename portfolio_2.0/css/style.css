@@ -34,6 +34,19 @@ body {
 #authors img {
   margin-top: -50px; }
 
+#authors .lenghten {
+  min-height: 200px;
+  max-height: 200px;
+  overflow: hidden;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: max-height 2s; }
+  #authors .lenghten:hover {
+    max-height: 800px;
+    cursor: context-menu; }
+
+.card {
+  margin-bottom: 50px; }
+
 @media (max-width: 768px) {
   #showcase {
     min-height: 500px; }
@@ -41,3 +54,14 @@ body {
       font-size: 2.7rem; }
   .mb-resp {
     margin-bottom: 1rem; } }
+
+#contact {
+  position: relative; }
+  #contact .forvideo {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    bottom: 0; }
+    #contact .forvideo .myvideo {
+      width: 100%; }
