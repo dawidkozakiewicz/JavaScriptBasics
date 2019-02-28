@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+.background {
+    position: relative;
+    width: 210mm;
+    height: 297mm;
+    border: solid 3px white;
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+    overflow: hidden;
+    padding: 45px;
+    background-color: #1f5295;
+    
+}
+
+.myname {
+    z-index: 5;
+    position: absolute;
+    color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: #1f5295d4;
+  
+    padding: 15px;
+}
+
+.myname h1 {
+    font-size: 60px;
+}
+
+.diagonal {
+    width: 300mm;
+    height: 110mm;
+    position: absolute;
+    transform: rotate(-10deg);
+    top: -184px;
+    left: -50px;
+    background-image: url(./images/dribbble_hackathon.png);
+    border: solid 3px white;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.restcontainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid white; */
+    top: 240px;
+    color: white;
+
+
+}
+
+.restcontainer .far, .fas, .fab {
+font-size: 60px;
+color: white;
+margin: 60px;
+}
+
+.restcontainer  h2{
+    text-align: left;
+    line-height: 19px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 13px;
+    text-align: justify;
+    line-height: 19px;
+    
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    border: 1px solid white;
+    border-radius: 15px;
+    height: auto;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5px;
+    
+}
+
+.column {
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+}
+.forimg {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 50px;
+    margin-bottom: 71px;
+
+}
+.forimg img {
+    width: 80px;
+    height: auto;
+}
+
+
+
+.back2 {
+    position: relative;
+    width: 210mm;
+    height: 297mm;
+    border: solid 3px white;
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+    overflow: hidden;
+    padding: 45px;
+    background-color: #1f5295;
+}
+
+
+.upmoover {
+    
+        position: relative;
+        top: -265px;
+        
+    
+}
+.upmoover strong {
+    color: darkturquoise;
+}
+.diagonalmoover {
+    position: relative;
+        top: 994px;
+    
+}
+
+.icons .far, .fas, .fab {
+    position: relative;
+    font-size: 48px;
+    color: white;
+    margin: 30px;
+   
+    }
+
+    .klauzula {
+        margin-top: 56px;
+    }
