@@ -109,7 +109,7 @@ p {
     border-radius: 15px;
     padding: 15px;
     margin-top: 50px;
-    margin-bottom: 71px;
+    margin-bottom: 90px;
 
 }
 .forimg img {
@@ -140,6 +140,17 @@ p {
         
     
 }
+
+.upmoover2 {
+    
+    position: relative;
+    top: -265px;
+    flex-wrap: wrap;
+    
+
+}
+
+
 .upmoover strong {
     color: darkturquoise;
 }
@@ -158,5 +169,23 @@ p {
     }
 
     .klauzula {
-        margin-top: 56px;
+        margin-top: 14px;
+    }
+
+    .column2 {
+        width: 100%;
+        display: block;
+        border: 1px solid white;
+        border-radius: 15px;
+        margin: 5px;
+        padding: 5px;
+        height: auto;
+    } 
+
+    .nontransparent {
+        background: #1f5295eb;
+    }
+
+    .klauzula p {
+        font-size: 11px;
     }
