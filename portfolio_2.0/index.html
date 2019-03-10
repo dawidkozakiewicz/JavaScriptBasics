@@ -166,7 +166,7 @@
         <div class="col-md-3 col-lg-2 col-sm-6 mb-4">
           <div class="card text-center mb-resp">
             <div class="card-body">
-              <img data-aos="flip-left" class="w-100 h-100" src="img\ikony\redux.png" alt="html">
+              <img data-aos="flip-left" class="w-100 h-100" src="img\ikony\webpack.png" alt="html">
             </div>
           </div>
         </div>
@@ -280,7 +280,7 @@
           <div class="img-box">
             <img src="./img/apka_1.jpg" alt="notatki">
             <div class="img-overlay">
-              <i class="fas fa-search" data-toggle="modal" data-target="#apka1"></i><br>
+              <i class="fas fa-search-plus"data-toggle="modal" data-target="#apka1"></i><br>
               <i class=" fab fa-github"></i>
               <i class="fas fa-globe"></i>
             </div>
@@ -321,7 +321,7 @@
           <div class="img-box">
             <img src="./img/apka-2.jpg" alt="notatki">
             <div class="img-overlay">
-              <i class="fas fa-search" data-toggle="modal" data-target="#apka2"></i><br>
+              <i class="fas fa-search-plus"data-toggle="modal" data-target="#apka2"></i><br>
                 <i class=" fab fa-github"></i>
               <i class="fas fa-globe"></i>
             </div>
@@ -360,7 +360,7 @@
           <div class="img-box">
             <img src="./img/apka-3.jpg" alt="notatki">
             <div class="img-overlay">
-              <i class="fas fa-search" data-toggle="modal" data-target="#apka3"></i><br>
+              <i class="fas fa-search-plus"data-toggle="modal" data-target="#apka3"></i><br>
                   <i class=" fab fa-github"></i>
               <i class="fas fa-globe"></i>
             </div>
@@ -399,7 +399,7 @@
           <div class="img-box">
             <img src="./img/apka-4.jpg" alt="notatki">
             <div class="img-overlay">
-              <i class="fas fa-search" data-toggle="modal" data-target="apka4"></i><br>
+              <i class="fas fa-search-plus"data-toggle="modal" data-target="#apka4"></i><br>
                     <i class=" fab fa-github"></i>
               <i class="fas fa-globe"></i>
             </div>
@@ -438,7 +438,7 @@
           <div class="img-box">
             <img src="./img/apka-5.jpg" alt="notatki">
             <div class="img-overlay">
-              <i class="fas fa-search" data-toggle="modal" data-target="#apka5"></i><br>
+              <i class="fas fa-search-plus"data-toggle="modal" data-target="#apka5"></i><br>
                       <i class=" fab fa-github"></i>
               <i class="fas fa-globe"></i>
             </div>
@@ -477,7 +477,7 @@
           <div class="img-box">
             <img src="./img/apka-6.jpg" alt="notatki">
             <div class="img-overlay">
-              <i class="fas fa-search" data-toggle="modal" data-target="#apka6"></i><br>
+              <i class="fas fa-search-plus"data-toggle="modal" data-target="#apka6"></i><br>
                         <i class=" fab fa-github"></i>
               <i class="fas fa-globe"></i>
             </div>
@@ -516,7 +516,7 @@
           <div class="img-box">
             <img src="./img/apka-7.jpg" alt="notatki">
             <div class="img-overlay">
-              <i class="fas fa-search" data-toggle="modal" data-target="#apka7"></i><br>
+              <i class="fas fa-search-plus" data-toggle="modal" data-target="#apka7"></i><br>
                           <i class=" fab fa-github"></i>
               <i class="fas fa-globe"></i>
             </div>
@@ -555,7 +555,7 @@
           <div class="img-box">
             <img src="./img/apka-8.jpg" alt="notatki">
             <div class="img-overlay">
-              <i class="fas fa-search" data-toggle="modal" data-target="#apka8"></i><br>
+              <i class="fas fa-search-plus" data-toggle="modal" data-target="#apka8"></i><br>
                             <i class=" fab fa-github"></i>
               <i class="fas fa-globe"></i>
             </div>
@@ -597,17 +597,14 @@
 
 
   <!-- CONTACT -->
-  <section id="contact" class="bg-light py-5">
-    <div class="forvideo">
-      <video autoplay muted loop class="myvideo">
-        <source
-          src="https://static.videezy.com/system/resources/previews/000/007/559/original/1080_HD_handwriting_notes_on_notebook_paper_Ryan.mp4">
-        Your browser does not support HTML5 video.
-      </video></div>
-    <div class="container">
+  <section id="contact" class="bg-dark">
+    <div class="mycontainer">
       <div class="row">
-        <div class="col-lg-9">
-          <h3>Napisz do mnie</h3>
+          <div class="col-lg-6 d-flex justify-content-center">
+              <img class="align-self-center aos-init aos-animate" data-aos="zoom-in" src="./img/mlogo.png" alt="">
+            </div>
+        <div class="col-lg-6">
+          <h3 class="text-white h1">Napisz do mnie</h3>
           <form method="post" name="contactform" action="nm.php">
             <div class="input-group input-group-lg mb-3">
               <div class="input-group-prepend">
@@ -636,13 +633,11 @@
               <textarea name="message" class="form-control" placeholder="Wiadomość" rows="5" required></textarea>
             </div>
 
-            <input type="submit" name="submit" value="Wyślij" class="btn btn-primary btn-block btn-lg">
+            <button type="submit" name="submit" value="Wyślij" class="btn btn-primary btn-block btn-lg">Wyślij</button>
           </form>
         </div>
 
-        <div class="col-lg-3 align-self-center">
-          <img src="img/mlogo.png" alt="" class="img-fluid" data-aos="zoom-in">
-        </div>
+       
       </div>
     </div>
   </section>
@@ -650,18 +645,23 @@
   <!-- FOOTER -->
   <footer id="main-footer" class="py-5 bg-dark text-white">
     <div class="container">
-      <div class="row text-center">
-        <div class="col-md-4 bg-info rounded bg-light">
+      <div class="row text-white">
+        <div class="col-md-4">
+          <p class="text-white">Dawid Kozakiewicz <br>
+             Wrocław <br>
+             mail: dawidkozakiewicz@gmail <br>
+             tel: 666 666 666
+          </p>
           <a href="https://github.com/dawidkozakiewicz" target="_blank"><i
-              class="fab display-4 px-2 py-2 fa-github"></i></a>
+              class="fab px-2 py-2 fa-github text-white"></i></a>
           <a href="https://codepen.io/abrahambreslauer/" target="_blank"><i
-              class="fab display-4 px-2 py-2 fa-codepen"></i></a>
+              class="fab px-2 py-2 fa-codepen text-white"></i></a>
           <a href="https://www.linkedin.com/in/dawid-kozakiewicz-5a616678/" target="_blank"><i
-              class="fab display-4 px-2 py-2 fa-linkedin-in"></i></a>
+              class="fab px-2 py-2 fa-linkedin-in text-white"></i></a>
         </div>
         <div class="col-md-6 px-2 py-2 ml-auto">
           <p class="lead">
-            Copyright Dawid Kozakiewicz &copy;<br>
+            Copyright Dawid Kozakiewicz &copy;
 
             <span id="year"></span>
           </p>
