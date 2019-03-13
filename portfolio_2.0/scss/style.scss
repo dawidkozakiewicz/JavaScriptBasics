@@ -66,7 +66,7 @@ body {
 
   padding-top: 100px;
   padding-bottom: 100px;
- 
+
 
   img {
     opacity: 1;
@@ -116,28 +116,29 @@ body {
   min-height: 600px;
   padding-top: 175px;
   padding-bottom: 250px;
-  height:100%;
+  height: 100%;
   background: url("../img/mapa.jpg");
   background-attachment: fixed;
-  
-   button {
-     margin-top: 100px;
-   }
+
+  button {
+    margin-top: 100px;
+  }
 
   img {
-  width: 320px;
-  height: 320px;
+    width: 320px;
+    height: 320px;
   }
 
   .input-group {
     height: 100px;
   }
+
   @media (max-width: 1400px) {
     .myvideo {
       display: none;
     }
   }
- 
+
   .forvideo {
     position: absolute;
     width: 100%;
@@ -184,8 +185,8 @@ body {
 #authors .img-box:hover img {
   transform: scale(.8);
   border-radius: 15px;
-  border: 2px solid black;
-  
+
+
 
 }
 
@@ -216,7 +217,7 @@ body {
     max-width: 35%;
     margin: 1.75rem auto;
   }
-  
+
 }
 
 .forvideo::before {
@@ -227,27 +228,51 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
+}
+
+.mycontainer {
+  width: 98%;
+  margin: 0 auto;
+  .row {
+    margin-left: 0;
+    margin-right: 0;
   }
+}
 
-  .mycontainer {
-    width: 98%;
+
+#contact::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  i {
+    font-size: 30px;
+    color: white;
+    transition: .5s ease;
+
   }
+}
 
+footer i:hover {
+  color: gray;
+  transform: rotate(720deg);
 
-  #contact::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    }
- 
-     footer i {
-        font-size: 30px;
-        transition: .5s ease;
-        &:hover {
-          color: gray;
-        }
-     }
+}
+
+#showcase {
+  height: 100vh;
+
+  .primary-overlay {
+    margin-top: 100px;
+  }
+}
+
+#accordion .card-header {
+  cursor: pointer;
+}

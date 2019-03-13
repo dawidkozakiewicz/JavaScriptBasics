@@ -115,8 +115,7 @@ body {
 
 #authors .img-box:hover img {
   transform: scale(0.8);
-  border-radius: 15px;
-  border: 2px solid black; }
+  border-radius: 15px; }
 
 #authors .img-box:hover .img-overlay {
   opacity: 1; }
@@ -148,7 +147,11 @@ body {
   height: 100%; }
 
 .mycontainer {
-  width: 98%; }
+  width: 98%;
+  margin: 0 auto; }
+  .mycontainer .row {
+    margin-left: 0;
+    margin-right: 0; }
 
 #contact::before {
   content: "";
@@ -161,6 +164,17 @@ body {
 
 footer i {
   font-size: 30px;
+  color: white;
   transition: .5s ease; }
-  footer i:hover {
-    color: gray; }
+
+footer i:hover {
+  color: gray;
+  transform: rotate(720deg); }
+
+#showcase {
+  height: 100vh; }
+  #showcase .primary-overlay {
+    margin-top: 100px; }
+
+#accordion .card-header {
+  cursor: pointer; }
