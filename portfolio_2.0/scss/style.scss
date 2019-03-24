@@ -5,7 +5,7 @@ $primary-overlay: rgba(50, 146, 166, 0.8);
 
 
 body {
-  margin-top: 105px;
+  margin-top: 1px;
   font-family: 'Raleway', sans-serif;
 
   i {
@@ -31,14 +31,9 @@ body {
   min-height: 600px;
   background-attachment: fixed;
 
-  // .primary-overlay {
-  //   background: $primary-overlay;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  // }
+.container {
+  margin-top: -100px;
+}
 }
 
 #newsletter {
@@ -93,6 +88,16 @@ body {
   }
 }
 
+
+#accordion {
+  .card-header {
+    background-color: #c7d1d7;
+  }
+  .card-body {
+    background-color: #d8e2e8;
+  }
+}
+
 .card {
   margin-bottom: 50px;
 }
@@ -113,46 +118,45 @@ body {
 
 #contact {
   position: relative;
-  min-height: 600px;
-  padding-top: 175px;
-  padding-bottom: 250px;
   height: 100%;
-  background: url("../img/mapa.jpg");
-  background-attachment: fixed;
+  background: #d8e2e8;
+  padding-top: 115px;
 
-  button {
-    margin-top: 100px;
+  input, textarea {
+    outline: none;
+    border: none;
+    border-bottom: 3px solid black;
+    margin: 20px;
+    background: #d8e2e8;
   }
 
-  img {
-    width: 320px;
-    height: 320px;
-  }
+ .leftimage {
+   background-image: url("../img/buzon-dribbble.gif");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   min-height: 500px;
+   i {
+     position: relative;
+     left: 50px;
+   }
+ }
+ button {
+   width: 50%;
+   margin: 0 auto;
+   box-shadow: none;
+   outline: none;
+   border-radius: 10px;
+   padding: 10px;
 
-  .input-group {
-    height: 100px;
-  }
+   &:hover {
+     cursor: pointer;
+   }
+  
+ }
 
-  @media (max-width: 1400px) {
-    .myvideo {
-      display: none;
-    }
-  }
 
-  .forvideo {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    top: 0;
-    bottom: 0;
-    background-color: transparent;
-
-    .myvideo {
-      width: 100%;
-
-    }
-  }
+  
 }
 
 .img-overlay {
@@ -220,15 +224,7 @@ body {
 
 }
 
-.forvideo::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-}
+
 
 .mycontainer {
   width: 98%;
@@ -240,15 +236,6 @@ body {
 }
 
 
-#contact::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-}
 
 footer {
   i {
@@ -266,10 +253,12 @@ footer i:hover {
 }
 
 #showcase {
-  height: 100vh;
+
 
   .primary-overlay {
-    margin-top: 100px;
+    margin-top: 159px;
+    padding-bottom: 160px;
+    padding-top: 66px;
   }
 }
 

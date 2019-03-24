@@ -19,11 +19,11 @@
 
 </head>
 
-<body id="home" data-spy="scroll" data-target="#main-nav" class="bg-dark text-dark">
+<body href="#home" id="home" data-spy="scroll" data-target="#main-nav" class="bg-dark text-dark">
 
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top border-bottom border-secondary py-4" id="main-nav">
     <div class="container">
-      <a href="#home" class="navbar-brand">
+      <a  class="navbar-brand">
         <img src="img/mlogo.png" width="50" height="50" alt="">
         <h3 class="d-inline align-middle h8">Dawid Kozakiewicz</h3>
       </a>
@@ -598,48 +598,19 @@
 
 
   <!-- CONTACT -->
-  <section id="contact" class="bg-dark">
-    <div class="mycontainer">
+  <section id="contact">
+    <div class="mycontainer py-5">
       <div class="row">
-        <div class="col-lg-6 d-flex justify-content-center">
-          <img class="align-self-center aos-init aos-animate" data-aos="zoom-in" src="./img/mlogo.png" alt="">
-        </div>
-        <div class="col-lg-6">
-          <h3 class="text-white h1">Napisz do mnie</h3>
-          <form method="post" name="contactform" action="nm.php">
-            <div class="input-group input-group-lg mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">
-                  <i class="fas fa-user"></i>
-                </span>
-              </div>
-              <input type="text" class="form-control" placeholder="Imię" name="name" required>
-            </div>
-
-            <div class="input-group input-group-lg mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">
-                  <i class="fas fa-envelope"></i>
-                </span>
-              </div>
-              <input type="email" name="email" class="form-control" placeholder="Email" required>
-            </div>
-
-            <div class="input-group input-group-lg mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">
-                  <i class="fas fa-pencil-alt"></i>
-                </span>
-              </div>
-              <textarea name="message" class="form-control" placeholder="Wiadomość" rows="5" required></textarea>
-            </div>
-
-            <button type="submit" name="submit" value="Wyślij" class="btn btn-primary btn-block btn-lg">Wyślij</button>
-          </form>
-        </div>
-
-
-      </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center leftimage"><h1>NAPISZ DO MNIE:</h1></div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <form method="post" name="contactform" action="nm.php" class="d-flex flex-column">
+        <input ttype="email" name="email" placeholder="Email" required>
+        <input type="text" placeholder="Imię" name="name" required>
+        <textarea name="message" placeholder="Wiadomość" rows="5" required></textarea>
+        <button class="btn-dark" type="submit" name="submit" value="Wyślij">WYŚLIJ</button>
+      </form>
+    </div>
+  </div>
     </div>
   </section>
 
@@ -651,7 +622,7 @@
           <p class="text-white">Dawid Kozakiewicz <br>
             Wrocław <br>
             mail: dawidkozakiewicz@gmail <br>
-            tel: 666 666 666
+            tel: +48 XXX XXX XXX
           </p>
           <a href="https://github.com/dawidkozakiewicz" target="_blank"><i class="fab px-2 py-2 fa-github"></i></a>
           <a href="https://codepen.io/abrahambreslauer/" target="_blank"><i class="fab px-2 py-2 fa-codepen"></i></a>

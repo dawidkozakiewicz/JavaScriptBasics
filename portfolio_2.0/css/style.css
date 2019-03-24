@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 body {
-  margin-top: 105px;
+  margin-top: 1px;
   font-family: 'Raleway', sans-serif; }
   body i:hover {
     cursor: pointer; }
@@ -16,6 +16,8 @@ body {
   background: url("../img/trianglify.png");
   min-height: 600px;
   background-attachment: fixed; }
+  #showcase .container {
+    margin-top: -100px; }
 
 #newsletter {
   transform: skewY(-4deg); }
@@ -52,6 +54,12 @@ body {
       max-height: 800px;
       cursor: context-menu; }
 
+#accordion .card-header {
+  background-color: #c7d1d7; }
+
+#accordion .card-body {
+  background-color: #d8e2e8; }
+
 .card {
   margin-bottom: 50px; }
 
@@ -65,32 +73,33 @@ body {
 
 #contact {
   position: relative;
-  min-height: 600px;
-  padding-top: 175px;
-  padding-bottom: 250px;
   height: 100%;
-  background: url("../img/mapa.jpg");
-  background-attachment: fixed; }
+  background: #d8e2e8;
+  padding-top: 115px; }
+  #contact input, #contact textarea {
+    outline: none;
+    border: none;
+    border-bottom: 3px solid black;
+    margin: 20px;
+    background: #d8e2e8; }
+  #contact .leftimage {
+    background-image: url("../img/buzon-dribbble.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px; }
+    #contact .leftimage i {
+      position: relative;
+      left: 50px; }
   #contact button {
-    margin-top: 100px; }
-  #contact img {
-    width: 320px;
-    height: 320px; }
-  #contact .input-group {
-    height: 100px; }
-  @media (max-width: 1400px) {
-    #contact .myvideo {
-      display: none; } }
-  #contact .forvideo {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    top: 0;
-    bottom: 0;
-    background-color: transparent; }
-    #contact .forvideo .myvideo {
-      width: 100%; }
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px; }
+    #contact button:hover {
+      cursor: pointer; }
 
 .img-overlay {
   transition: .5s ease;
@@ -137,30 +146,12 @@ body {
     max-width: 35%;
     margin: 1.75rem auto; } }
 
-.forvideo::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%; }
-
 .mycontainer {
   width: 98%;
   margin: 0 auto; }
   .mycontainer .row {
     margin-left: 0;
     margin-right: 0; }
-
-#contact::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%; }
 
 footer i {
   font-size: 30px;
@@ -171,10 +162,10 @@ footer i:hover {
   color: gray;
   transform: rotate(720deg); }
 
-#showcase {
-  height: 100vh; }
-  #showcase .primary-overlay {
-    margin-top: 100px; }
+#showcase .primary-overlay {
+  margin-top: 159px;
+  padding-bottom: 160px;
+  padding-top: 66px; }
 
 #accordion .card-header {
   cursor: pointer; }
